@@ -4,10 +4,10 @@
     <list default="true" id="95720713-4432-440b-9c22-51e45f49af8d" name="Default" comment="" />
     <ignored path="matrix-math.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Matrix.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1379024537765" ignored="false" />
+    <file path="/Matrix.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1379025410657" ignored="false" />
     <file path="$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Vectro.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1378731817441" ignored="false" />
     <file path="/Main.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1379023923177" ignored="false" />
-    <file path="/Vector.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1378802040415" ignored="false" />
+    <file path="/Vector.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1379025447858" ignored="false" />
     <file path="/fragment.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1379024831890" ignored="false" />
     <file path="/Element.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1378935757574" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xinclude.xsd" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1378935648999" ignored="false" />
@@ -18,7 +18,7 @@
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xslt-1_0.xsd" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1378935649000" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/catalog.xsd" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1378935649000" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xslt-2_0.xsd" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1378935649000" ignored="false" />
-    <file path="/IntMatrix.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1379023761976" ignored="false" />
+    <file path="/IntMatrix.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1379025351534" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,16 +87,16 @@
       <file leaf-file-name="Matrix.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="49" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0">
+            <state line="6" column="49" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IntMatrix.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="IntMatrix.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/IntMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="46" selection-start="434" selection-end="434" vertical-scroll-proportion="0.3505843">
+            <state line="5" column="29" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -111,10 +111,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Vector.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Vector.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/linkedlistbased/Vector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="19" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
+            <state line="3" column="35" selection-start="85" selection-end="85" vertical-scroll-proportion="0.114503816">
               <folding />
             </state>
           </provider>
@@ -123,7 +123,7 @@
       <file leaf-file-name="Matrix.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/linkedlistbased/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="23" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
+            <state line="4" column="48" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,7 +132,7 @@
       <file leaf-file-name="Vector.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Vector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="42" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0">
+            <state line="5" column="0" selection-start="80" selection-end="138" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -150,13 +150,14 @@
       <list>
         <option value="$PROJECT_DIR$/src/Matrix.java" />
         <option value="$PROJECT_DIR$/src/org/markvarabyou/Matrix.java" />
-        <option value="$PROJECT_DIR$/src/org/markvarabyou/math/linkedlistbased/Vector.java" />
-        <option value="$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Vector.java" />
         <option value="$PROJECT_DIR$/src/org/markvarabyou/math/interfaces/Element.java" />
-        <option value="$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/IntMatrix.java" />
         <option value="$PROJECT_DIR$/src/org/markvarabyou/ui/Main.java" />
-        <option value="$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Matrix.java" />
         <option value="$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/IntMatrixTest.groovy" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/IntMatrix.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Matrix.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Vector.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/math/linkedlistbased/Matrix.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/math/linkedlistbased/Vector.java" />
       </list>
     </option>
   </component>
@@ -297,7 +298,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="editing.templates" />
+    <property name="options.lastSelected" value="fileTemplates" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
@@ -401,7 +402,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24924242" sideWeight="0.6704" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -538,20 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/linkedlistbased/Vector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="19" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/linkedlistbased/Matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/ui/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="18" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
@@ -559,23 +546,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Vector.java">
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/IntMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="42" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0">
+        <state line="5" column="29" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="49" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0">
+        <state line="6" column="49" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/IntMatrix.java">
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/linkedlistbased/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="46" selection-start="434" selection-end="434" vertical-scroll-proportion="0.3505843">
+        <state line="4" column="48" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="80" selection-end="138" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/linkedlistbased/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="35" selection-start="85" selection-end="85" vertical-scroll-proportion="0.114503816">
           <folding />
         </state>
       </provider>
