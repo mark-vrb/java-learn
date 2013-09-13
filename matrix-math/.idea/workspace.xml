@@ -4,12 +4,12 @@
     <list default="true" id="95720713-4432-440b-9c22-51e45f49af8d" name="Default" comment="" />
     <ignored path="matrix-math.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Matrix.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1379025410657" ignored="false" />
+    <file path="/Matrix.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1379084066555" ignored="false" />
     <file path="$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Vectro.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1378731817441" ignored="false" />
     <file path="/Main.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1379023923177" ignored="false" />
-    <file path="/Vector.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1379025447858" ignored="false" />
-    <file path="/fragment.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1379024831890" ignored="false" />
-    <file path="/Element.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1378935757574" ignored="false" />
+    <file path="/Vector.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1379083581120" ignored="false" />
+    <file path="/fragment.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1379075937797" ignored="false" />
+    <file path="/Element.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1379078161997" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xinclude.xsd" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1378935648999" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/XMLSchema.xsd" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1378935649000" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/relaxng.rng" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1378935649000" ignored="false" />
@@ -19,6 +19,7 @@
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/catalog.xsd" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1378935649000" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xslt-2_0.xsd" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1378935649000" ignored="false" />
     <file path="/IntMatrix.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1379025351534" ignored="false" />
+    <file path="/Calculator.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1379082668295" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,16 +88,29 @@
       <file leaf-file-name="Matrix.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="49" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="124" column="0" selection-start="3908" selection-end="3908" vertical-scroll-proportion="-288.5">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IntMatrix.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/IntMatrix.java">
+      <file leaf-file-name="Vector.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Vector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="29" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
+            <state line="27" column="41" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Calculator.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/common/Calculator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="45" selection-start="335" selection-end="335" vertical-scroll-proportion="0.27454242">
               <folding />
             </state>
           </provider>
@@ -105,16 +119,16 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/ui/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="18" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
+            <state line="3" column="28" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Vector.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Vector.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/linkedlistbased/Vector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="35" selection-start="85" selection-end="85" vertical-scroll-proportion="0.114503816">
+            <state line="8" column="16" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -123,16 +137,7 @@
       <file leaf-file-name="Matrix.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/linkedlistbased/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="48" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Vector.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Vector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="80" selection-end="138" vertical-scroll-proportion="0.0">
+            <state line="4" column="24" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -151,21 +156,24 @@
         <option value="$PROJECT_DIR$/src/Matrix.java" />
         <option value="$PROJECT_DIR$/src/org/markvarabyou/Matrix.java" />
         <option value="$PROJECT_DIR$/src/org/markvarabyou/math/interfaces/Element.java" />
-        <option value="$PROJECT_DIR$/src/org/markvarabyou/ui/Main.java" />
         <option value="$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/IntMatrixTest.groovy" />
         <option value="$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/IntMatrix.java" />
-        <option value="$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Matrix.java" />
-        <option value="$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Vector.java" />
         <option value="$PROJECT_DIR$/src/org/markvarabyou/math/linkedlistbased/Matrix.java" />
         <option value="$PROJECT_DIR$/src/org/markvarabyou/math/linkedlistbased/Vector.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/math/common/ElementImpl.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/math/common/Element.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/math/common/Calculator.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/ui/Main.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Vector.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Matrix.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
     <option name="y" value="-4" />
-    <option name="width" value="1368" />
-    <option name="height" value="773" />
+    <option name="width" value="1922" />
+    <option name="height" value="1085" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -193,7 +201,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -282,12 +289,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="matrix-math" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="matrix-math" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markvarabyou" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="math" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="arraylistbased" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -298,22 +332,25 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="fileTemplates" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.markvarabyou.math.arraylistbased" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="org.markvarabyou.math.arraylistbased" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.markvarabyou.math.common" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -347,6 +384,26 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <list size="1">
@@ -385,7 +442,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
+    <frame x="-1" y="-4" width="1922" height="1085" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -401,8 +458,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24924242" sideWeight="0.6704" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1755603" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -476,20 +533,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Vector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="42" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/linkedlistbased/Matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/linkedlistbased/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="19" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
@@ -507,7 +550,9 @@
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -521,7 +566,9 @@
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="19" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -539,44 +586,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/ui/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/IntMatrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="29" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="49" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/linkedlistbased/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="48" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Vector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="80" selection-end="138" vertical-scroll-proportion="0.0">
+        <state line="4" column="24" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/linkedlistbased/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="35" selection-start="85" selection-end="85" vertical-scroll-proportion="0.114503816">
+        <state line="8" column="16" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/ui/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="28" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="41" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="0" selection-start="3908" selection-end="3908" vertical-scroll-proportion="-288.5">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/common/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="45" selection-start="335" selection-end="335" vertical-scroll-proportion="0.27454242">
           <folding />
         </state>
       </provider>
