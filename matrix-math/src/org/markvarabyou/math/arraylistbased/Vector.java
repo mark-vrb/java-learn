@@ -105,7 +105,7 @@ public class Vector<T> {
     public Vector<T> multiply(Vector<T> vector){
         Vector<T> result = new Vector<T>(length, calculator);
         for (int i = 0; i < length; i++){
-            result.set(i, calculator.sum(get(i), vector.get(i)));
+            result.set(i, calculator.mul(get(i), vector.get(i)));
         }
         return result;
     }

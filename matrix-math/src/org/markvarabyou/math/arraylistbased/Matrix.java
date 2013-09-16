@@ -166,10 +166,10 @@ public class Matrix<T> {
 
         for (int i = 0; i < getRowCount(); i++){
             for (int j = 0; j < getColCount(); j++)
-                this.set(i, j, calculator.sum(this.get(i, j), matrix.get(i, j)));
+                result.set(i, j, calculator.sum(this.get(i, j), matrix.get(i, j)));
         }
 
-        return this;
+        return result;
     }
 
     /**
@@ -178,11 +178,13 @@ public class Matrix<T> {
      * @return result matrix
      */
     public Matrix<T> multiply(T value){
+        Matrix<T> result = new Matrix<T>(rowCount, colCount, calculator);
+
         for (int i = 0; i < getRowCount(); i++){
             for (int j = 0; j < getColCount(); j++)
-                this.set(i, j, calculator.mul(this.get(i, j), value));
+                result.set(i, j, calculator.mul(this.get(i, j), value));
         }
-        return this;
+        return result;
     }
 
     /**
