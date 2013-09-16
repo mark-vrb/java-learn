@@ -11,7 +11,7 @@ import org.markvarabyou.math.common.Calculator;
 public class FloatCalculator extends Calculator<Float> {
     @Override
     public Float getNew() {
-        return new Float(0);
+        return (float) 0;
     }
 
     @Override

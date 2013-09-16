@@ -4,6 +4,7 @@ import org.markvarabyou.math.common.Calculator;
 import org.markvarabyou.math.common.MatrixExceptionHelper;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Class for matrix math based on ArrayList.
@@ -33,9 +34,7 @@ public class Matrix<T> {
         this.colCount = colCount;
         this.calculator = calculator;
         elements = new ArrayList<T>();
-        for (T element : array){
-            elements.add(element);
-        }
+        Collections.addAll(elements, array);
     }
 
     /**
@@ -193,7 +192,7 @@ public class Matrix<T> {
      * @return result matrix
      */
     public Matrix<T> multiply(Matrix<T> matrix){
-        Matrix<T> result =  new Matrix<T>(rowCount, colCount, calculator);
+        Matrix<T> result =  new Matrix<T>(this.getRowCount(), matrix.getColCount(), calculator);
 
         // Validation
         if (this.getColCount() != matrix.getRowCount())

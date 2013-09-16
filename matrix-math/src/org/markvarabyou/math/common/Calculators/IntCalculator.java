@@ -11,7 +11,7 @@ import org.markvarabyou.math.common.Calculator;
 public class IntCalculator extends Calculator<Integer> {
     @Override
     public Integer getNew() {
-        return new Integer(0);
+        return 0;
     }
 
     @Override

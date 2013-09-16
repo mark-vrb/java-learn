@@ -4,6 +4,7 @@ import org.markvarabyou.math.common.Calculator;
 
 import java.util.AbstractList;
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Class for mathematical vector.
@@ -26,9 +27,7 @@ public class Vector<T> {
         this.length = elements.length;
         this.calculator = calculator;
         this.elements = new ArrayList<T>();
-        for (T element : elements){
-            this.elements.add(element);
-        }
+        Collections.addAll(this.elements, elements);
     }
 
     /**
