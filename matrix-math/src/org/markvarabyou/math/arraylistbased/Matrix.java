@@ -1,10 +1,12 @@
 package org.markvarabyou.math.arraylistbased;
 
 import org.markvarabyou.math.common.Calculator;
+import org.markvarabyou.math.common.MatrixExceptionHelper;
+
 import java.util.ArrayList;
 
 /**
- * Abstract generic class for math matrix.
+ * Class for matrix math based on ArrayList.
  * Author: Mark Vorobyov
  * Date: 9/9/13
  * Time: 3:44 PM
@@ -15,25 +17,33 @@ public class Matrix<T> {
     private int rowCount;
     private int colCount;
     private Calculator<T> calculator;
+    private MatrixExceptionHelper helper = new MatrixExceptionHelper();
 
     /**
-     * Initializes new matrix rowCount x colCount with values from array
+     * Initializes new matrix rowCount x colCount with values from array and calculator
      * @param rowCount Number of rows in new matrix
      * @param colCount Number of columns in new matrix
      * @param array Array with values to initialize matrix
+     * @param calculator Object-calculator for matrix elements
      */
     public Matrix(int rowCount, int colCount, T[] array, Calculator<T> calculator) {
+        helper.checkLength(array.length, rowCount * colCount, "array");
+
         this.rowCount = rowCount;
         this.colCount = colCount;
         this.calculator = calculator;
-        if (!isInRange(rowCount*colCount, 0, array.length))
-            throw new IllegalArgumentException("Invalid array length");
         elements = new ArrayList<T>();
         for (T element : array){
             elements.add(element);
         }
     }
 
+    /**
+     * Initializes new matrix rowCount x colCount with initial values and calculator
+     * @param rowCount Number of rows in new matrix
+     * @param colCount Number of columns in new matrix
+     * @param calculator Object-calculator for matrix elements
+     */
     public Matrix(int rowCount, int colCount, Calculator<T> calculator) {
         this.rowCount = rowCount;
         this.colCount = colCount;
@@ -44,26 +54,52 @@ public class Matrix<T> {
         }
     }
 
+    /**
+     * @return Count of rows in matrix
+     */
     public int getRowCount() {
         return rowCount;
     }
 
+    /**
+     * @return Count of columns in matrix
+     */
     public int getColCount() {
         return colCount;
     }
 
+    /**
+     * @param row number of element row
+     * @param col number of element column
+     * @return value of element of matrix
+     */
     public T get(int row, int col){
-        checkRowAndColCount(row, col, rowCount, colCount);
+        helper.checkRowAndColCount(row, col, rowCount, colCount);
+
         return elements.get(row * colCount + col);
     }
 
+    /**
+     * Sets the value to element in specified row and column
+     * @param row number of element row
+     * @param col number of element column
+     * @param value value of element to set
+     * @return set value
+     */
     public T set(int row, int col, T value){
-        checkRowAndColCount(row, col, rowCount, colCount);
+        helper.checkRowAndColCount(row, col, rowCount, colCount);
+
         return elements.set(row * colCount + col, value);
     }
 
+    /**
+     * Convert specified row into vector an returns it
+     * @param row number of row          ArrayList
+     * @return vector from specified matrix row
+     */
     public Vector<T> getRow(int row){
-        //TODO: Add validation here
+        helper.checkRange(row, rowCount);
+
         ArrayList<T> vector = new ArrayList<T>();
         int startIndex = this.getColCount() * row;
         for (int i = startIndex; i < startIndex + this.getColCount(); i++){
@@ -72,12 +108,28 @@ public class Matrix<T> {
         return new Vector<T>(vector, calculator);
     }
 
+    /**
+     * Sets the vector values to elements from specified row
+     * @param row number of row
+     * @param vector vector with new values for row
+     */
     public void setRow(int row, Vector<T> vector){
-        //TODO: add implementation
+        helper.checkRange(row, rowCount);
+        helper.checkLength(vector.getLength(), colCount, "vector");
+
+        for (int i = 0; i < colCount; i++){
+            set(row, i, vector.get(i));
+        }
     }
 
+    /**
+     * Convert specified column into vector an returns it
+     * @param col number of column
+     * @return vector from specified matrix column
+     */
     public Vector<T> getCol(int col){
-        //TODO: Add validation here
+        helper.checkRange(col, colCount);
+
         ArrayList<T> vector = new ArrayList<T>();
         for (int i = col; i < colCount * rowCount; i+=colCount){
             vector.add(elements.get(i));
@@ -85,10 +137,25 @@ public class Matrix<T> {
         return new Vector<T>(vector, calculator);
     }
 
+    /**
+     * Sets the vector values to elements from specified column
+     * @param col number of column
+     * @param vector vector with new values for column
+     */
     public void setCol(int col, Vector<T> vector){
-        //TODO: add implementation
+        helper.checkRange(col, colCount);
+        helper.checkLength(vector.getLength(), rowCount, "vector");
+
+        for (int i = 0; i < rowCount; i++){
+            set(i, col, vector.get(i));
+        }
     }
 
+    /**
+     * Adds specified matrix with this (only if sizes is equal)
+     * @param matrix matrix to add
+     * @return result of adding
+     */
     public Matrix<T> add(Matrix<T> matrix){
         Matrix<T> result = new Matrix<T>(rowCount, colCount, calculator);
 
@@ -105,6 +172,11 @@ public class Matrix<T> {
         return this;
     }
 
+    /**
+     * Multiplies current matrix to single value
+     * @param value value to be multiplied
+     * @return result matrix
+     */
     public Matrix<T> multiply(T value){
         for (int i = 0; i < getRowCount(); i++){
             for (int j = 0; j < getColCount(); j++)
@@ -113,6 +185,11 @@ public class Matrix<T> {
         return this;
     }
 
+    /**
+     * Multiplies current matrix to specified (only if matrices is consistent)
+     * @param matrix matrix to multiply by
+     * @return result matrix
+     */
     public Matrix<T> multiply(Matrix<T> matrix){
         Matrix<T> result =  new Matrix<T>(rowCount, colCount, calculator);
 
@@ -122,19 +199,9 @@ public class Matrix<T> {
 
         for (int i = 0; i < this.getRowCount(); i++){
             for (int j = 0; j < matrix.getColCount(); j++){
-
-                //TODO: add implementation
+                result.set(i, j, this.getRow(i).multiply(matrix.getCol(j)).sumElements());
             }
         }
         return result;
-    }
-
-    private boolean isInRange(int value, int left, int right){
-        return value >= left && value <= right;
-    }
-
-    private void checkRowAndColCount(int row, int col, int rowCount, int colCount) {
-        if (!isInRange(row, 0, rowCount) || !isInRange(col, 0, colCount))
-            throw new IllegalArgumentException("Invalid row or column index");
     }
 }

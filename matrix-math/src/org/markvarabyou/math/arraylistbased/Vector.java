@@ -2,6 +2,7 @@ package org.markvarabyou.math.arraylistbased;
 
 import org.markvarabyou.math.common.Calculator;
 
+import java.util.AbstractList;
 import java.util.ArrayList;
 
 /**
@@ -16,6 +17,11 @@ public class Vector<T> {
     private int length;
     private Calculator<T> calculator;
 
+    /**
+     * Initializes new vector object with values from array and calculator
+     * @param elements array of vector values
+     * @param calculator object to perform math operations with values
+     */
     public Vector(T[] elements, Calculator<T> calculator) {
         this.length = elements.length;
         this.calculator = calculator;
@@ -25,7 +31,12 @@ public class Vector<T> {
         }
     }
 
-    public Vector(ArrayList<T> elements, Calculator<T> calculator) {
+    /**
+     * Initializes new vector object with values from list and calculator
+     * @param elements list with vector values
+     * @param calculator object to perform math operations with values
+     */
+    public Vector(AbstractList<T> elements, Calculator<T> calculator) {
         this.length = elements.size();
         this.calculator = calculator;
         this.elements = new ArrayList<T>();
@@ -34,6 +45,11 @@ public class Vector<T> {
         }
     }
 
+    /**
+     * Initializes new vector object with specified length and calculator. Fills them with initial values
+     * @param length count of elements in vector
+     * @param calculator object to perform math operations with values
+     */
     public Vector(int length, Calculator<T> calculator) {
         this.length = length;
         this.calculator = calculator;
@@ -43,14 +59,36 @@ public class Vector<T> {
         }
     }
 
+    /**
+     * Gets value of element with specified index
+     * @param index index of element
+     * @return value of selected element
+     */
     public T get(int index){
         return elements.get(index);
     }
 
+    /**
+     * Sets value to element with specified index
+     * @param index index of element
+     * @param value value to set
+     */
     public void set(int index, T value){
         elements.set(index, value);
     }
 
+    /**
+     * Gets length of current vector
+     * @return length of current vector
+     */
+    public int getLength(){
+        return length;
+    }
+
+    /**
+     * Sums elements values from vector
+     * @return sum of elements
+     */
     public T sumElements(){
         T sum = calculator.getNew();
         for (T element : elements){
@@ -59,6 +97,11 @@ public class Vector<T> {
         return sum;
     }
 
+    /**
+     * Multiplies current vector to specified vector
+     * @param vector vector to multiply by
+     * @return result vector
+     */
     public Vector<T> multiply(Vector<T> vector){
         Vector<T> result = new Vector<T>(length, calculator);
         for (int i = 0; i < length; i++){
