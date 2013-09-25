@@ -23,4 +23,9 @@ public class DoubleCalculator extends Calculator<Double> {
     public Double mul(Double first, Double second) {
         return first * second;
     }
+
+    @Override
+    public Double decode(String s) {
+        return Double.parseDouble(s);
+    }
 }

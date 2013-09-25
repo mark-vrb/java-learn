@@ -29,4 +29,11 @@ public abstract class Calculator<T> {
      * @return result of multiplication
      */
     public abstract T mul(T first, T second);
+
+    /**
+     * Decodes element from string
+     * @param s string to decode
+     * @return decoded element
+     */
+    public abstract T decode(String s);
 }

@@ -23,4 +23,9 @@ public class IntCalculator extends Calculator<Integer> {
     public Integer mul(Integer first, Integer second) {
         return first * second;
     }
+
+    @Override
+    public Integer decode(String s) {
+        return Integer.parseInt(s);
+    }
 }

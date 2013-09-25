@@ -3,7 +3,7 @@ package org.markvarabyou.ui;
 import org.markvarabyou.math.arraylistbased.Matrix;
 import org.markvarabyou.math.common.Calculators.DoubleCalculator;
 
-import java.io.IOException;
+import java.io.*;
 import java.util.Random;
 
 public class Main {
@@ -51,12 +51,31 @@ public class Main {
         int cols = 100;
 
         Double[] values1 = generateTestMatrixValues(rows, cols);
-        Double[] values2 = generateTestMatrixValues(rows, cols);
+//        Double[] values2 = generateTestMatrixValues(rows, cols);
+//
+//        System.out.println(String.format("ArrayList based Matrix elapsed time: \t%d%n",
+//                measureArrayListTime(rows, cols, values1, values2)));
+//
+//        System.out.println(String.format("LinkedList based Matrix elapsed time: \t%d%n",
+//                measureLinkedListTime(rows, cols, values1, values2)));
 
-        System.out.println(String.format("ArrayList based Matrix elapsed time: \t%d%n",
-                measureArrayListTime(rows, cols, values1, values2)));
+        // Serializing
+//        Matrix<Double> m = new Matrix<Double>(2, 2, new Double[]{1.0, 2.0, 3.0, 4.0}, new DoubleCalculator());
+        Matrix<Double> m = new Matrix<Double>(rows, cols, values1, new DoubleCalculator());
+        //m.serialize("/tmp/matrix.ser");
+        m.writeToFile("/tmp/matrix.txt");
 
-        System.out.println(String.format("LinkedList based Matrix elapsed time: \t%d%n",
-                measureLinkedListTime(rows, cols, values1, values2)));
+        // Deserializer
+        m = new Matrix<Double>(new DoubleCalculator());
+        m.readFromFile("/tmp/matrix.txt");
+        //m.deserialize("/tmp/matrix.ser");
+
+        for (int i = 0; i < m.getRowCount(); i++){
+            for (int j = 0; j < m.getColCount(); j++){
+                System.out.print(String.format("\t%s", m.get(i, j)));
+            }
+            System.out.println();
+        }
+
     }
 }

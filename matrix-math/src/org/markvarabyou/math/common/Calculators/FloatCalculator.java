@@ -23,4 +23,9 @@ public class FloatCalculator extends Calculator<Float> {
     public Float mul(Float first, Float second) {
         return first * second;
     }
+
+    @Override
+    public Float decode(String s) {
+        return Float.parseFloat(s);
+    }
 }

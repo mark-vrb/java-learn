@@ -3,6 +3,7 @@ package org.markvarabyou.math.arraylistbased;
 import org.markvarabyou.math.common.Calculator;
 import org.markvarabyou.math.common.MatrixExceptionHelper;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -12,13 +13,13 @@ import java.util.Collections;
  * Date: 9/9/13
  * Time: 3:44 PM
  */
-public class Matrix<T> {
+public class Matrix<T> implements Serializable {
 
     private ArrayList<T> elements;
     private int rowCount;
     private int colCount;
-    private Calculator<T> calculator;
-    private MatrixExceptionHelper helper = new MatrixExceptionHelper();
+    private transient Calculator<T> calculator;
+    private transient MatrixExceptionHelper helper = new MatrixExceptionHelper();
 
     /**
      * Initializes new matrix rowCount x colCount with values from array and calculator
@@ -51,6 +52,17 @@ public class Matrix<T> {
         for (int i = 0; i < rowCount*colCount; i++){
             elements.add(calculator.getNew());
         }
+    }
+
+    /**
+     * Initializes new matrix without values and calculator
+     * @param calculator Object-calculator for matrix elements
+     */
+    public Matrix(Calculator<T> calculator){
+        this.rowCount = 0;
+        this.colCount = 0;
+        this.calculator = calculator;
+        elements = new ArrayList<T>();
     }
 
     /**
@@ -204,5 +216,102 @@ public class Matrix<T> {
             }
         }
         return result;
+    }
+
+    /**
+     * Serializes matrix in file specified
+     * @param fileName file to serialize matrix
+     */
+    public void serialize(String fileName){
+        try {
+            FileOutputStream fileOut = new FileOutputStream(fileName);
+            ObjectOutputStream out = new ObjectOutputStream(fileOut);
+            out.writeObject(this);
+            out.close();
+            fileOut.close();
+        } catch(IOException i) {
+            i.printStackTrace();
+        }
+    }
+
+    /**
+     * Deserializes matrix from file specified
+     * @param fileName file from matrix will be deserialized
+     */
+    public void deserialize(String fileName) {
+        try {
+            FileInputStream fileIn = new FileInputStream(fileName);
+            ObjectInputStream in = new ObjectInputStream(fileIn);
+            cloneValues((Matrix<T>) in.readObject());
+            in.close();
+            fileIn.close();
+        } catch(IOException i) {
+            i.printStackTrace();
+            return;
+        } catch(ClassNotFoundException c) {
+            c.printStackTrace();
+            return;
+        }
+    }
+
+    private void cloneValues(Matrix<T> matrix){
+        rowCount = matrix.getRowCount();
+        colCount = matrix.getColCount();
+        elements = new ArrayList<T>(matrix.elements);
+    }
+
+    /**
+     * Write matrix to text file
+     * @param fileName file to write matrix
+     */
+    public void writeToFile(String fileName) {
+        BufferedWriter writer = null;
+        try {
+            writer = new BufferedWriter(new FileWriter(fileName));
+            writer.write(Integer.toString(rowCount));
+            writer.newLine();
+            writer.write(Integer.toString(colCount));
+            writer.newLine();
+            for (T element : elements){
+                writer.write(element.toString());
+                writer.newLine();
+                writer.flush();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (writer != null) try {
+                writer.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    /**
+     * Read matrix from text file of appropriate format
+     * @param fileName file to read from
+     */
+    public void readFromFile(String fileName){
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader(fileName));
+            rowCount = Integer.parseInt(reader.readLine());
+            colCount = Integer.parseInt(reader.readLine());
+            for (int i = 0; i < rowCount * colCount; i++){
+                elements.add(calculator.decode(reader.readLine()));
+            }
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                reader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
