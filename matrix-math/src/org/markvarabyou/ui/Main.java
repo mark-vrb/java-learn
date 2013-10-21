@@ -4,6 +4,8 @@ import org.markvarabyou.math.arraylistbased.Matrix;
 import org.markvarabyou.math.common.Calculators.DoubleCalculator;
 
 import java.io.*;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 
 public class Main {
@@ -46,18 +48,25 @@ public class Main {
         return System.nanoTime() - startTime;
     }
 
-    public static void main(String[] args) throws IOException {
+    private void compareListImplementations(){
         int rows = 100;
         int cols = 100;
 
         Double[] values1 = generateTestMatrixValues(rows, cols);
-//        Double[] values2 = generateTestMatrixValues(rows, cols);
-//
-//        System.out.println(String.format("ArrayList based Matrix elapsed time: \t%d%n",
-//                measureArrayListTime(rows, cols, values1, values2)));
-//
-//        System.out.println(String.format("LinkedList based Matrix elapsed time: \t%d%n",
-//                measureLinkedListTime(rows, cols, values1, values2)));
+        Double[] values2 = generateTestMatrixValues(rows, cols);
+
+        System.out.println(String.format("ArrayList based Matrix elapsed time: \t%d%n",
+                measureArrayListTime(rows, cols, values1, values2)));
+
+        System.out.println(String.format("LinkedList based Matrix elapsed time: \t%d%n",
+                measureLinkedListTime(rows, cols, values1, values2)));
+    }
+
+    private void sertests(){
+        int rows = 100;
+        int cols = 100;
+
+        Double[] values1 = generateTestMatrixValues(rows, cols);
 
         // Serializing
 //        Matrix<Double> m = new Matrix<Double>(2, 2, new Double[]{1.0, 2.0, 3.0, 4.0}, new DoubleCalculator());
@@ -76,6 +85,16 @@ public class Main {
             }
             System.out.println();
         }
+    }
 
+    public static void main(String[] args) throws IOException {
+        SymbolsUsageStatistics statistics = new SymbolsUsageStatistics("/tmp/text.txt");
+        statistics.processFile();
+        HashMap<Character,Integer> symbolsUsage = statistics.getSymbolsUsage();
+        System.out.println("Symbols usage statistics:");
+        for (Map.Entry<Character, Integer> entry : symbolsUsage.entrySet())
+        {
+            System.out.println("'" + entry.getKey() + "' -> " + entry.getValue());
+        }
     }
 }
