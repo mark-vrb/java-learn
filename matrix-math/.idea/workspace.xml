@@ -6,7 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Matrix.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1380142033840" ignored="false" />
     <file path="$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Vectro.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1378731817441" ignored="false" />
-    <file path="/Main.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1382385256982" ignored="false" />
+    <file path="/Main.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1382693503872" ignored="false" />
     <file path="/Vector.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1379360597766" ignored="false" />
     <file path="/fragment.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1380140378811" ignored="false" />
     <file path="/Element.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1379078161997" ignored="false" />
@@ -106,9 +106,7 @@
         <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/ui/SymbolsUsageStatistics.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="27" column="0" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -134,8 +132,10 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/ui/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="32" selection-start="3321" selection-end="3321" vertical-scroll-proportion="0.6315789">
-              <folding />
+            <state line="97" column="14" selection-start="3282" selection-end="3282" vertical-scroll-proportion="0.18213059">
+              <folding>
+                <element signature="e#3155#3163#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -179,9 +179,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
-    <option name="width" value="1366" />
-    <option name="height" value="744" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -209,8 +210,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -275,6 +274,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,9 +294,9 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -506,8 +507,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="744" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -517,13 +518,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49161074" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32741398" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24886191" sideWeight="0.50838923" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49161074" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24866596" sideWeight="0.50945497" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49054506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -597,6 +598,13 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/tests/arraylistbased/MatrixTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="326" column="26" selection-start="10134" selection-end="10134" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/tests/arraylistbased/VectorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="54" selection-start="305" selection-end="305" vertical-scroll-proportion="0.15025042" />
@@ -614,9 +622,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/linkedlistbased/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="39" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="22" column="39" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/tests/linkedlistbased/MatrixTest.java">
@@ -626,9 +632,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/linkedlistbased/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="7" selection-start="55" selection-end="55" vertical-scroll-proportion="0.049916804">
-          <folding />
-        </state>
+        <state line="2" column="7" selection-start="55" selection-end="55" vertical-scroll-proportion="0.049916804" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/common/MatrixExceptionHelper.java">
@@ -636,11 +640,6 @@
         <state line="12" column="82" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.7.0-openjdk-amd64/jre/lib/rt.jar!/java/util/ArrayList.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="0" selection-start="5910" selection-end="5910" vertical-scroll-proportion="1.647482" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/common/Calculators/DoubleCalculator.java">
@@ -652,16 +651,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/common/Calculators/IntCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="38" selection-start="497" selection-end="497" vertical-scroll-proportion="0.5154639">
-          <folding />
-        </state>
+        <state line="22" column="38" selection-start="497" selection-end="497" vertical-scroll-proportion="0.5154639" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/common/Calculators/FloatCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="35" selection-start="634" selection-end="634" vertical-scroll-proportion="0.8969072">
-          <folding />
-        </state>
+        <state line="28" column="35" selection-start="634" selection-end="634" vertical-scroll-proportion="0.8969072" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/tests/arraylistbased/MatrixTest.java">
@@ -688,16 +683,16 @@
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/ui/SymbolsUsageStatistics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="0" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/ui/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="32" selection-start="3321" selection-end="3321" vertical-scroll-proportion="0.6315789">
-          <folding />
+        <state line="97" column="14" selection-start="3282" selection-end="3282" vertical-scroll-proportion="0.18213059">
+          <folding>
+            <element signature="e#3155#3163#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

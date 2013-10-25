@@ -48,7 +48,7 @@ public class Main {
         return System.nanoTime() - startTime;
     }
 
-    private void compareListImplementations(){
+    private static void compareListImplementations(){
         int rows = 100;
         int cols = 100;
 
@@ -62,22 +62,19 @@ public class Main {
                 measureLinkedListTime(rows, cols, values1, values2)));
     }
 
-    private void sertests(){
+    private static void serializationTest(String fileName){
         int rows = 100;
         int cols = 100;
 
         Double[] values1 = generateTestMatrixValues(rows, cols);
 
         // Serializing
-//        Matrix<Double> m = new Matrix<Double>(2, 2, new Double[]{1.0, 2.0, 3.0, 4.0}, new DoubleCalculator());
         Matrix<Double> m = new Matrix<Double>(rows, cols, values1, new DoubleCalculator());
-        //m.serialize("/tmp/matrix.ser");
-        m.writeToFile("/tmp/matrix.txt");
+        m.serialize(fileName);
 
         // Deserializer
         m = new Matrix<Double>(new DoubleCalculator());
-        m.readFromFile("/tmp/matrix.txt");
-        //m.deserialize("/tmp/matrix.ser");
+        m.deserialize(fileName);
 
         for (int i = 0; i < m.getRowCount(); i++){
             for (int j = 0; j < m.getColCount(); j++){
@@ -87,8 +84,30 @@ public class Main {
         }
     }
 
-    public static void main(String[] args) throws IOException {
-        SymbolsUsageStatistics statistics = new SymbolsUsageStatistics("/tmp/text.txt");
+    private static void readerWriterTest(String fileName) {
+        int rows = 100;
+        int cols = 100;
+
+        Double[] values1 = generateTestMatrixValues(rows, cols);
+
+        // Serializing
+        Matrix<Double> m = new Matrix<Double>(rows, cols, values1, new DoubleCalculator());
+        m.writeToFile(fileName);
+
+        // Deserializer
+        m = new Matrix<Double>(new DoubleCalculator());
+        m.readFromFile(fileName);
+
+        for (int i = 0; i < m.getRowCount(); i++){
+            for (int j = 0; j < m.getColCount(); j++){
+                System.out.print(String.format("\t%s", m.get(i, j)));
+            }
+            System.out.println();
+        }
+    }
+
+    private static void symbolsUsageStatistics(String fileName) {
+        SymbolsUsageStatistics statistics = new SymbolsUsageStatistics(fileName);
         statistics.processFile();
         HashMap<Character,Integer> symbolsUsage = statistics.getSymbolsUsage();
         System.out.println("Symbols usage statistics:");
@@ -96,5 +115,19 @@ public class Main {
         {
             System.out.println("'" + entry.getKey() + "' -> " + entry.getValue());
         }
+    }
+
+    public static void main(String[] args) throws IOException {
+        // #2 Comparing matrix implementations
+        compareListImplementations();
+
+        // #3.1 Statistics of symbols usage
+        //symbolsUsageStatistics("file.txt");
+
+        // #3.2 Reader/Writer for saving/restoring Matrix
+        //readerWriterTest("file");
+
+        // #3.3 Serialization for Matrix
+        //serializationTest("file");
     }
 }
