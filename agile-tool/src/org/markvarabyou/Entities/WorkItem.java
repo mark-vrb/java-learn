@@ -12,20 +12,20 @@ import java.util.UUID;
  * Time: 1:16 PM
  */
 public class WorkItem {
-    private UUID id;
+    private int id;
     private String name;
     private String description;
     private Date creationDate;
-    private UUID createdByUserId;
-    private UUID assigneeUserId;
-    private int size;
+    private int createdByUserId;
+    private int assigneeUserId;
+    private byte size;
     private WorkItemType type;
 
-    public UUID getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(UUID id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -53,27 +53,27 @@ public class WorkItem {
         this.creationDate = creationDate;
     }
 
-    public UUID getCreatedByUserId() {
+    public int getCreatedByUserId() {
         return createdByUserId;
     }
 
-    public void setCreatedByUserId(UUID createdByUserId) {
+    public void setCreatedByUserId(int createdByUserId) {
         this.createdByUserId = createdByUserId;
     }
 
-    public UUID getAssigneeUserId() {
+    public int getAssigneeUserId() {
         return assigneeUserId;
     }
 
-    public void setAssigneeUserId(UUID assigneeUserId) {
+    public void setAssigneeUserId(int assigneeUserId) {
         this.assigneeUserId = assigneeUserId;
     }
 
-    public int getSize() {
+    public byte getSize() {
         return size;
     }
 
-    public void setSize(int size) {
+    public void setSize(byte size) {
         this.size = size;
     }
 

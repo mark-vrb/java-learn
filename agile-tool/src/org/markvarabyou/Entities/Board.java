@@ -10,16 +10,16 @@ import java.util.UUID;
  * Time: 4:03 PM
  */
 public class Board {
-    private UUID id;
+    private int id;
     private String name;
-    private UUID createdByUserId;
+    private int createdByUserId;
     private Date creationDate;
 
-    public UUID getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(UUID id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -31,11 +31,11 @@ public class Board {
         this.name = name;
     }
 
-    public UUID getCreatedByUserId() {
+    public int getCreatedByUserId() {
         return createdByUserId;
     }
 
-    public void setCreatedByUserId(UUID createdByUserId) {
+    public void setCreatedByUserId(int createdByUserId) {
         this.createdByUserId = createdByUserId;
     }
 

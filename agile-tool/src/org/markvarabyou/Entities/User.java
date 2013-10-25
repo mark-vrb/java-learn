@@ -9,16 +9,16 @@ import java.util.UUID;
  * Time: 4:07 PM
  */
 public class User {
-    private UUID id;
+    private int id;
     private String firstName;
     private String lastName;
     private String email;
 
-    public UUID getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(UUID id) {
+    public void setId(int id) {
         this.id = id;
     }
 

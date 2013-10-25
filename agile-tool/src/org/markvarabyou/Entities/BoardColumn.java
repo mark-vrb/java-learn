@@ -11,16 +11,16 @@ import java.util.UUID;
  * Time: 4:00 PM
  */
 public class BoardColumn {
-    private UUID id;
+    private int id;
     private String name;
-    private UUID boardId;
+    private int boardId;
     private BoardColumnType type;
 
-    public UUID getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(UUID id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -32,11 +32,11 @@ public class BoardColumn {
         this.name = name;
     }
 
-    public UUID getBoardId() {
+    public int getBoardId() {
         return boardId;
     }
 
-    public void setBoardId(UUID boardId) {
+    public void setBoardId(int boardId) {
         this.boardId = boardId;
     }
 
