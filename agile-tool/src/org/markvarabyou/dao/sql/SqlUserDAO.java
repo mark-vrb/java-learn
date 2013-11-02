@@ -1,34 +1,34 @@
-package org.markvarabyou.DAO.SQL;
+package org.markvarabyou.dao.sql;
 
-import org.markvarabyou.entities.BoardColumn;
-import org.markvarabyou.entities.interfaces.EntityDAO;
+import org.markvarabyou.entities.User;
+import org.markvarabyou.entities.interfaces.EntityDao;
 
 import java.util.LinkedList;
 
 /**
- * SQL Data Access Object for BoardColumn entity.
+ * SQL Data Access Object for User entity.
  * User: Mark Varabyou
  * Date: 11/2/13
- * Time: 7:44 PM
+ * Time: 7:42 PM
  */
-public class SqlBoardColumnDAO implements EntityDAO<BoardColumn> {
+public class SqlUserDao implements EntityDao<User> {
     @Override
-    public BoardColumn create(BoardColumn entity) {
+    public User create(User entity) {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
-    public BoardColumn read(int id) {
+    public User read(int id) {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
-    public LinkedList<BoardColumn> read() {
+    public LinkedList<User> read() {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
-    public BoardColumn update(BoardColumn entity) {
+    public User update(User entity) {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 

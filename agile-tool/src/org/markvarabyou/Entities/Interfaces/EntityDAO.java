@@ -8,7 +8,7 @@ import java.util.LinkedList;
  * Date: 11/2/13
  * Time: 7:34 PM
  */
-public interface EntityDAO<T> {
+public interface EntityDao<T> {
     T create(T entity);
     T read(int id);
     LinkedList<T> read();

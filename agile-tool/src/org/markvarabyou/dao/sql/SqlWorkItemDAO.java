@@ -1,34 +1,34 @@
-package org.markvarabyou.DAO.SQL;
+package org.markvarabyou.dao.sql;
 
-import org.markvarabyou.entities.BoardUserRole;
-import org.markvarabyou.entities.interfaces.EntityDAO;
+import org.markvarabyou.entities.WorkItem;
+import org.markvarabyou.entities.interfaces.EntityDao;
 
 import java.util.LinkedList;
 
 /**
- * SQL Data Access Object for BoardUserRole entity.
+ * Sql-based Data Access Object for WorkItem.
  * User: Mark Varabyou
- * Date: 11/2/13
- * Time: 7:48 PM
+ * Date: 10/25/13
+ * Time: 1:18 PM
  */
-public class SqlBoardUserRoleDAO implements EntityDAO<BoardUserRole> {
+public class SqlWorkItemDao implements EntityDao<WorkItem> {
     @Override
-    public BoardUserRole create(BoardUserRole entity) {
+    public WorkItem create(WorkItem entity) {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
-    public BoardUserRole read(int id) {
+    public WorkItem read(int id) {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
-    public LinkedList<BoardUserRole> read() {
+    public LinkedList<WorkItem> read() {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
-    public BoardUserRole update(BoardUserRole entity) {
+    public WorkItem update(WorkItem entity) {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
