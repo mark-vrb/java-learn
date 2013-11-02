@@ -1,8 +1,6 @@
-package org.markvarabyou.Entities;
+package org.markvarabyou.entities;
 
-import org.markvarabyou.Entities.Enums.BoardColumnType;
-
-import java.util.UUID;
+import org.markvarabyou.entities.enums.BoardColumnType;
 
 /**
  * BoardColumn entity, holding set of WorkItems.

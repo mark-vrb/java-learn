@@ -1,4 +1,4 @@
-package org.markvarabyou.Entities.Enums;
+package org.markvarabyou.entities.enums;
 
 /**
  * Type of WorkItem enum.

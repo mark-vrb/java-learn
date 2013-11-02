@@ -1,6 +1,4 @@
-package org.markvarabyou.Entities;
-
-import java.util.UUID;
+package org.markvarabyou.entities;
 
 /**
  * User entity for agile tool system.

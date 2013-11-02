@@ -1,9 +1,8 @@
-package org.markvarabyou.Entities;
+package org.markvarabyou.entities;
 
-import org.markvarabyou.Entities.Enums.WorkItemType;
+import org.markvarabyou.entities.enums.WorkItemType;
 
 import java.util.Date;
-import java.util.UUID;
 
 /**
  * WorkItem entity.

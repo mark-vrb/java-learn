@@ -1,34 +1,34 @@
 package org.markvarabyou.DAO.SQL;
 
+import org.markvarabyou.entities.User;
 import org.markvarabyou.entities.interfaces.EntityDAO;
-import org.markvarabyou.entities.WorkItem;
 
 import java.util.LinkedList;
 
 /**
- * Sql-based Data Access Object for WorkItem.
+ * SQL Data Access Object for User entity.
  * User: Mark Varabyou
- * Date: 10/25/13
- * Time: 1:18 PM
+ * Date: 11/2/13
+ * Time: 7:42 PM
  */
-public class SqlWorkItemDAO implements EntityDAO<WorkItem> {
+public class SqlUserDAO implements EntityDAO<User> {
     @Override
-    public WorkItem create(WorkItem entity) {
+    public User create(User entity) {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
-    public WorkItem read(int id) {
+    public User read(int id) {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
-    public LinkedList<WorkItem> read() {
+    public LinkedList<User> read() {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
-    public WorkItem update(WorkItem entity) {
+    public User update(User entity) {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 

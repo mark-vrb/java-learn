@@ -1,8 +1,6 @@
-package org.markvarabyou.Entities;
+package org.markvarabyou.entities;
 
-import org.markvarabyou.Entities.Enums.BoardUserRoleType;
-
-import java.util.UUID;
+import org.markvarabyou.entities.enums.BoardUserRoleType;
 
 /**
  * Board - User relation many-to-many entity.

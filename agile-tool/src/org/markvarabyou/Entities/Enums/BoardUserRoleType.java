@@ -1,4 +1,4 @@
-package org.markvarabyou.Entities.Enums;
+package org.markvarabyou.entities.enums;
 
 /**
  * BoardUser roles type enum.
