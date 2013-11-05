@@ -1,6 +1,6 @@
 package org.markvarabyou.entities.interfaces;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 /**
  * Data Access Object Interface for entities of agile-tool.
@@ -11,7 +11,7 @@ import java.util.LinkedList;
 public interface EntityDao<T> {
     T create(T entity);
     T read(int id);
-    LinkedList<T> read();
+    ArrayList<T> read();
     T update(T entity);
     boolean delete(int id);
 }

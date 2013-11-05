@@ -3,6 +3,7 @@ package org.markvarabyou.dao.sql;
 import org.markvarabyou.entities.BoardColumn;
 import org.markvarabyou.entities.interfaces.EntityDao;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 /**
@@ -23,7 +24,7 @@ public class SqlBoardColumnDao implements EntityDao<BoardColumn> {
     }
 
     @Override
-    public LinkedList<BoardColumn> read() {
+    public ArrayList<BoardColumn> read() {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 

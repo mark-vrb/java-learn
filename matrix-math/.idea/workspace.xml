@@ -26,7 +26,7 @@
     <file path="/IntCalculator.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1380141737288" ignored="false" />
     <file path="/DoubleCalculator.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1380141667196" ignored="false" />
     <file path="/VectorTest.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1379360788148" ignored="false" />
-    <file path="/SymbolsUsageStatistics.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1382384665768" ignored="false" />
+    <file path="/SymbolsUsageStatistics.java" changelist="95720713-4432-440b-9c22-51e45f49af8d" time="1383656853132" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +46,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -83,7 +84,6 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -93,10 +93,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Matrix.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Matrix.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="197" column="46" selection-start="6189" selection-end="6189" vertical-scroll-proportion="0.0">
+            <state line="20" column="86" selection-start="527" selection-end="527" vertical-scroll-proportion="0.03024911">
               <folding />
             </state>
           </provider>
@@ -114,7 +114,7 @@
       <file leaf-file-name="SymbolsUsageStatistics.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/ui/SymbolsUsageStatistics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0">
+            <state line="20" column="31" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -129,13 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/ui/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="60" selection-start="4253" selection-end="4253" vertical-scroll-proportion="0.49821427">
-              <folding>
-                <element signature="e#3155#3163#0" expanded="true" />
-              </folding>
+            <state line="130" column="8" selection-start="4505" selection-end="4505" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -143,7 +141,7 @@
       <file leaf-file-name="MatrixTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/tests/arraylistbased/MatrixTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="338" column="33" selection-start="10645" selection-end="10645" vertical-scroll-proportion="0.0">
+            <state line="301" column="37" selection-start="9275" selection-end="9275" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -219,8 +217,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -282,122 +278,6 @@
               <option name="myItemId" value="math" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="linkedlistbased" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="matrix-math" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="matrix-math" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="markvarabyou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="math" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arraylistbased" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="matrix-math" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="matrix-math" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="markvarabyou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="math" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="matrix-math" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="matrix-math" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="markvarabyou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="math" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="matrix-math" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="matrix-math" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="markvarabyou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="math" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Calculators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -427,6 +307,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -780,9 +662,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/common/Calculators/DoubleCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="18" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="27" column="18" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/common/Calculators/IntCalculator.java">
@@ -797,16 +677,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/common/MatrixExceptionHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="42" selection-start="186" selection-end="186" vertical-scroll-proportion="0.24285714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/ui/SymbolsUsageStatistics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="8" column="42" selection-start="186" selection-end="186" vertical-scroll-proportion="0.24285714" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/common/Calculator.java">
@@ -823,20 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="197" column="46" selection-start="6189" selection-end="6189" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/tests/arraylistbased/MatrixTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="338" column="33" selection-start="10645" selection-end="10645" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/tests/arraylistbased/VectorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="30" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0">
@@ -844,12 +701,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/tests/arraylistbased/MatrixTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="301" column="37" selection-start="9275" selection-end="9275" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/ui/SymbolsUsageStatistics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="31" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/ui/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="60" selection-start="4253" selection-end="4253" vertical-scroll-proportion="0.49821427">
-          <folding>
-            <element signature="e#3155#3163#0" expanded="true" />
-          </folding>
+        <state line="130" column="8" selection-start="4505" selection-end="4505" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/math/arraylistbased/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="86" selection-start="527" selection-end="527" vertical-scroll-proportion="0.03024911">
+          <folding />
         </state>
       </provider>
     </entry>

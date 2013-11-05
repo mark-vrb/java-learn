@@ -7,8 +7,8 @@ import java.io.IOException;
 import java.util.HashMap;
 
 /**
- * Created with IntelliJ IDEA.
- * Author: Mark Vorobyov
+ * Class for getting symbols usage statistics.
+ * Author: Mark Varabyou
  * Date: 10/19/13
  * Time: 9:54 PM
  */

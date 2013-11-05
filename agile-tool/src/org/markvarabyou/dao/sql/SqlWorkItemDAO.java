@@ -3,6 +3,7 @@ package org.markvarabyou.dao.sql;
 import org.markvarabyou.entities.WorkItem;
 import org.markvarabyou.entities.interfaces.EntityDao;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 /**
@@ -23,7 +24,7 @@ public class SqlWorkItemDao implements EntityDao<WorkItem> {
     }
 
     @Override
-    public LinkedList<WorkItem> read() {
+    public ArrayList<WorkItem> read() {
         return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 

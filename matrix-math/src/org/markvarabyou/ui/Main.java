@@ -119,15 +119,15 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         // #2 Comparing matrix implementations
-        compareListImplementations();
+        //compareListImplementations();
 
         // #3.1 Statistics of symbols usage
-        //symbolsUsageStatistics("file.txt");
+        //symbolsUsageStatistics("D:\\file.txt");
 
         // #3.2 Reader/Writer for saving/restoring Matrix
-        //readerWriterTest("file");
+        //readerWriterTest("D:\\file1.txt");
 
         // #3.3 Serialization for Matrix
-        //serializationTest("file");
+        serializationTest("D:\\file2");
     }
 }
