@@ -3,9 +3,10 @@ package org.markvarabyou.dao.sql;
 import org.markvarabyou.entities.User;
 import org.markvarabyou.entities.interfaces.EntityDao;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.LinkedList;
 
 /**
  * SQL Data Access Object for User entity.
@@ -35,7 +36,7 @@ public class SqlUserDao extends SqlDao implements EntityDao<User> {
 
     @Override
     public User create(User entity) {
-        setupConnection(CREATE_QUERY);
+        setupStatement(CREATE_QUERY);
         User user = null;
         try {
             statement.setString(1, entity.getFirstName());
@@ -43,7 +44,7 @@ public class SqlUserDao extends SqlDao implements EntityDao<User> {
             statement.setString(3, entity.getEmail());
             statement.executeUpdate();
             ResultSet resultSet = statement.getGeneratedKeys();
-            int key = 0;
+            int key;
             if (resultSet != null && resultSet.next()) {
                 key = resultSet.getInt(1);
                 user = read(key);
@@ -51,13 +52,14 @@ public class SqlUserDao extends SqlDao implements EntityDao<User> {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        closeStatement();
         return user;
     }
 
     @Override
     public User read(int id) {
         User user = null;
-        setupConnection(READ_QUERY);
+        setupStatement(READ_QUERY);
         try {
             statement.setInt(1, id);
             ResultSet resultSet = statement.executeQuery();
@@ -67,14 +69,14 @@ public class SqlUserDao extends SqlDao implements EntityDao<User> {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        closeConnection();
+        closeStatement();
         return user;
     }
 
     @Override
     public ArrayList<User> read() {
         ArrayList<User> userList = new ArrayList<User>();
-        setupConnection(READ_ALL_QUERY);
+        setupStatement(READ_ALL_QUERY);
         try{
             ResultSet resultSet = statement.executeQuery();
             while(resultSet.next()){
@@ -84,13 +86,13 @@ public class SqlUserDao extends SqlDao implements EntityDao<User> {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        closeConnection();
+        closeStatement();
         return userList;
     }
 
     @Override
     public User update(User entity) {
-        setupConnection(UPDATE_QUERY);
+        setupStatement(UPDATE_QUERY);
         User user = null;
         try {
             statement.setString(1, entity.getFirstName());
@@ -103,12 +105,13 @@ public class SqlUserDao extends SqlDao implements EntityDao<User> {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        closeStatement();
         return user;
     }
 
     @Override
     public boolean delete(int id) {
-        setupConnection(DELETE_QUERY);
+        setupStatement(DELETE_QUERY);
         int affectedRows = 0;
         try{
             statement.setInt(1, id);
@@ -116,7 +119,7 @@ public class SqlUserDao extends SqlDao implements EntityDao<User> {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        closeConnection();
+        closeStatement();
         return affectedRows != 0;
     }
 }

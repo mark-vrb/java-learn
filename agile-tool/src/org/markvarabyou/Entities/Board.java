@@ -45,4 +45,12 @@ public class Board {
     public void setCreationDate(Date creationDate) {
         this.creationDate = creationDate;
     }
+
+    public Board(){}
+
+    public Board(String name, int createdByUserId, Date creationDate){
+        this.name = name;
+        this.createdByUserId = createdByUserId;
+        this.creationDate = creationDate;
+    }
 }

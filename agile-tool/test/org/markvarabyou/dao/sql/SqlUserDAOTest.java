@@ -4,12 +4,10 @@ import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.markvarabyou.dao.sql.helpers.SqlAgileToolDaoTestHelper;
 import org.markvarabyou.entities.User;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.util.ArrayList;
-import java.util.LinkedList;
 
 /**
  * Tests for Sql Data Access Object for entity User.
@@ -17,37 +15,28 @@ import java.util.LinkedList;
  * Date: 11/2/13
  * Time: 11:18 PM
  */
-public class SqlUserDaoTest {
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/agile-tool-db";
-
-    private static final String USER = "root";
-    private static final String PASS = "1234";
-
+public class SqlUserDaoTest extends SqlAgileToolDaoTestHelper {
     private SqlUserDao sqlUserDao;
-    private Connection connection;
 
-    private User createTestUser(){
+    private User getValidUser(){
         return new User("test", "test", "test@test.com");
     }
 
     @Before
     public void setUp() throws Exception {
-        connection = DriverManager.getConnection(DB_URL, USER, PASS);
-        connection.setAutoCommit(false);
-
+        setUpConnection();
         sqlUserDao = new SqlUserDao(connection);
     }
 
     @After
     public void tearDown() throws Exception {
-        connection.rollback();
-        connection.close();
+        closeAndRollbackConnection();
     }
 
     @Test
     public void testCreateSuccess() throws Exception {
         //Given
-        User user = createTestUser();
+        User user = getValidUser();
 
         //When
         User createdUser = sqlUserDao.create(user);
@@ -64,7 +53,7 @@ public class SqlUserDaoTest {
     @Test
     public void testReadByIdSuccess(){
         //Given
-        User expectedUser = sqlUserDao.create(createTestUser());
+        User expectedUser = sqlUserDao.create(getValidUser());
 
         //When
         User actualUser = sqlUserDao.read(expectedUser.getId());
@@ -92,7 +81,7 @@ public class SqlUserDaoTest {
     @Test
     public void testReadAll(){
         //Given
-        User user = sqlUserDao.create(createTestUser());
+        User user = sqlUserDao.create(getValidUser());
 
         //When
         ArrayList<User> list = sqlUserDao.read();
@@ -110,7 +99,7 @@ public class SqlUserDaoTest {
     @Test
     public void testUpdateSuccess(){
         //Given
-        User expectedUser = sqlUserDao.create(createTestUser());
+        User expectedUser = sqlUserDao.create(getValidUser());
         expectedUser.setFirstName("newTestName");
         expectedUser.setLastName("newTestName");
         expectedUser.setEmail("newEmail");
@@ -129,7 +118,7 @@ public class SqlUserDaoTest {
     @Test
     public void testUpdateFailed(){
         //Given
-        User wrongUser = sqlUserDao.create(createTestUser());
+        User wrongUser = sqlUserDao.create(getValidUser());
         wrongUser.setId(-1); //Wrong id
 
         //When
@@ -142,7 +131,7 @@ public class SqlUserDaoTest {
     @Test
     public void testDeleteSuccess(){
         //Given
-        User user = sqlUserDao.create(createTestUser());
+        User user = sqlUserDao.create(getValidUser());
 
         //When
         boolean isDeleted = sqlUserDao.delete(user.getId());

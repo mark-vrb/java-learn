@@ -18,7 +18,7 @@ public abstract class SqlDao {
         this.connection = connection;
     }
 
-    protected void setupConnection(String sql) {
+    protected void setupStatement(String sql) {
         try {
             Class.forName(JDBC_DRIVER);
             statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
@@ -29,7 +29,7 @@ public abstract class SqlDao {
         }
     }
 
-    protected void closeConnection(){
+    protected void closeStatement(){
         try {
             statement.close();
         } catch (SQLException e) {
