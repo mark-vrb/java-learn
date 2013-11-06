@@ -29,7 +29,7 @@ public class SqlBoardDao extends SqlDao implements EntityDao<Board> {
     private Board getBoardFromResultSet(ResultSet resultSet) throws SQLException {
         Board board = new Board();
         board.setId(resultSet.getInt("id"));
-        board.setName(resultSet.getString("email"));
+        board.setName(resultSet.getString("name"));
         board.setCreatedByUserId(resultSet.getInt("created_by_user_id"));
         board.setCreationDate(resultSet.getDate("creation_date"));
         return board;

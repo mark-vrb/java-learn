@@ -45,4 +45,12 @@ public class BoardColumn {
     public void setType(BoardColumnType type) {
         this.type = type;
     }
+
+    public BoardColumn(){}
+
+    public BoardColumn(String name, int boardId, BoardColumnType type){
+        this.name = name;
+        this.boardId = boardId;
+        this.type = type;
+    }
 }
