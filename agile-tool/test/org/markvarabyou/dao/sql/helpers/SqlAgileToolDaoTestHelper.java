@@ -1,7 +1,5 @@
 package org.markvarabyou.dao.sql.helpers;
 
-import org.markvarabyou.dao.sql.SqlUserDao;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;

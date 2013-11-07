@@ -2,36 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37b98207-620d-49aa-8a96-7fd8faa8dffa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/org/markvarabyou/dao/sql/SqlBoardColumnDaoTest.java" />
-      <change type="MOVED" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool\src\org\markvarabyou\dao\sql\SqlBoardColumnDAO.java" afterPath="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardColumnDao.java" />
-      <change type="MODIFICATION" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool\src\org\markvarabyou\entities\BoardColumn.java" afterPath="$PROJECT_DIR$/src/org/markvarabyou/entities/BoardColumn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/markvarabyou/entities/interfaces/RelationEntityDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/org/markvarabyou/dao/sql/SqlBoardUserRoleDaoTest.java" />
+      <change type="MOVED" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool\src\org\markvarabyou\dao\sql\SqlBoardUserRoleDAO.java" afterPath="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardUserRoleDao.java" />
+      <change type="MOVED" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool\src\org\markvarabyou\dao\sql\SqlWorkItemDAO.java" afterPath="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlWorkItemDao.java" />
+      <change type="MODIFICATION" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool\src\org\markvarabyou\entities\BoardUserRole.java" afterPath="$PROJECT_DIR$/src/org/markvarabyou/entities/BoardUserRole.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/org/markvarabyou/dao/sql/helpers/SqlAgileToolDaoTestHelper.java" afterPath="$PROJECT_DIR$/test/org/markvarabyou/dao/sql/helpers/SqlAgileToolDaoTestHelper.java" />
+      <change type="MODIFICATION" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool\src\org\markvarabyou\entities\WorkItem.java" afterPath="$PROJECT_DIR$/src/org/markvarabyou/entities/WorkItem.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="agile-tool.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/WorkItemDAO.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383409818834" ignored="false" />
-    <file path="/WorkItem.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1382731750848" ignored="false" />
+    <file path="/WorkItem.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383758659512" ignored="false" />
     <file path="/SqlWorkItemDAO.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383424077670" ignored="false" />
     <file path="/WorkItemType.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1382706412466" ignored="false" />
     <file path="/BoardColumn.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383756755527" ignored="false" />
     <file path="/BoardColumnType.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1382706402425" ignored="false" />
     <file path="/Board.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383754959508" ignored="false" />
     <file path="/User.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383688118577" ignored="false" />
-    <file path="/BoardUserRole.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1382731647786" ignored="false" />
+    <file path="/BoardUserRole.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383758506570" ignored="false" />
     <file path="/BoardUserRoleType.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1382706757128" ignored="false" />
-    <file path="/Dummy.txt" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383752593856" ignored="false" />
+    <file path="/Dummy.txt" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383837482561" ignored="false" />
     <file path="/EntityDAO.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383424108892" ignored="false" />
     <file path="/SqlBoardDAO.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383424059904" ignored="false" />
     <file path="/SqlUserDAO.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383424038459" ignored="false" />
     <file path="/SqlBoardColumnDAO.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383424051625" ignored="false" />
     <file path="/SqlBoardUserRoleDAO.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383424069128" ignored="false" />
     <file path="/br.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383423032180" ignored="false" />
-    <file path="/fragment.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383756443609" ignored="false" />
+    <file path="/fragment.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383758855469" ignored="false" />
     <file path="/SqlUserDAOTest.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383424092964" ignored="false" />
-    <file path="/SqlBoardColumnDao.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383758237180" ignored="false" />
+    <file path="/SqlBoardColumnDao.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383847758065" ignored="false" />
     <file path="/SqlBoardDao.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383754047842" ignored="false" />
-    <file path="/SqlBoardUserRoleDao.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383424160652" ignored="false" />
-    <file path="/SqlWorkItemDao.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383424176605" ignored="false" />
+    <file path="/SqlBoardUserRoleDao.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383846800989" ignored="false" />
+    <file path="/SqlWorkItemDao.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383759589840" ignored="false" />
     <file path="/SqlUserDao.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383691268361" ignored="false" />
     <file path="/SqlUserDaoTest.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383755162737" ignored="false" />
     <file path="/SqlDao.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383753722520" ignored="false" />
@@ -40,6 +44,8 @@
     <file path="/a.dummy" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383753991559" ignored="false" />
     <file path="/SqlAgileToolDaoTestHelper.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383754565141" ignored="false" />
     <file path="/SqlBoardColumnDaoTest.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383756979288" ignored="false" />
+    <file path="/SqlBoardUserRoleDaoTest.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383759928369" ignored="false" />
+    <file path="/RelationEntityDao.java" changelist="37b98207-620d-49aa-8a96-7fd8faa8dffa" time="1383759473211" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +60,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -90,7 +97,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -100,89 +106,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Board.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/entities/Board.java">
+      <file leaf-file-name="SqlBoardUserRoleDao.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardUserRoleDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="41" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SqlUserDao.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlUserDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="33" selection-start="3628" selection-end="3929" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2845#2860#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SqlDao.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="33" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SqlUserDaoTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/org/markvarabyou/dao/sql/SqlUserDaoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="29" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SqlAgileToolDaoTestHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/org/markvarabyou/dao/sql/helpers/SqlAgileToolDaoTestHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="4" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SqlBoardColumnDao.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SqlBoardColumnDao.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardColumnDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="94" selection-start="1756" selection-end="1756" vertical-scroll-proportion="0.45825604">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2864#2877#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SqlBoardDaoTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/org/markvarabyou/dao/sql/SqlBoardDaoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="0" selection-start="2029" selection-end="2029" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SqlBoardColumnDaoTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/org/markvarabyou/dao/sql/SqlBoardColumnDaoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="43" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BoardColumn.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/entities/BoardColumn.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="20" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0">
+            <state line="52" column="10" selection-start="2100" selection-end="2100" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -191,10 +130,10 @@
       <file leaf-file-name="SqlBoardDao.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="40" selection-start="3843" selection-end="3843" vertical-scroll-proportion="0.0">
+            <state line="48" column="17" selection-start="1844" selection-end="1844" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2690#2697#0" expanded="true" />
+                <element signature="e#2654#2661#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -218,22 +157,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/org/markvarabyou/entities/interfaces/EntityDAO.java" />
-        <option value="$PROJECT_DIR$/src/org/markvarabyou/entities/User.java" />
-        <option value="$PROJECT_DIR$/src/org/markvarabyou/entities/interfaces/EntityDao.java" />
-        <option value="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlWorkItemDao.java" />
-        <option value="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardUserRoleDao.java" />
-        <option value="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlDao.java" />
         <option value="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlUserDao.java" />
         <option value="$PROJECT_DIR$/test/org/markvarabyou/dao/sql/SqlAgileToolDaoTestHelper.java" />
         <option value="$PROJECT_DIR$/src/org/markvarabyou/entities/Board.java" />
-        <option value="$PROJECT_DIR$/test/org/markvarabyou/dao/sql/helpers/SqlAgileToolDaoTestHelper.java" />
         <option value="$PROJECT_DIR$/test/org/markvarabyou/dao/sql/SqlUserDaoTest.java" />
         <option value="$PROJECT_DIR$/test/org/markvarabyou/dao/sql/SqlBoardDaoTest.java" />
         <option value="$PROJECT_DIR$/src/org/markvarabyou/entities/BoardColumn.java" />
         <option value="$PROJECT_DIR$/test/org/markvarabyou/dao/sql/SqlBoardColumnDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/entities/BoardUserRole.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/entities/WorkItem.java" />
+        <option value="$PROJECT_DIR$/test/org/markvarabyou/dao/sql/helpers/SqlAgileToolDaoTestHelper.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/entities/interfaces/RelationEntityDao.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlWorkItemDao.java" />
+        <option value="$PROJECT_DIR$/test/org/markvarabyou/dao/sql/SqlBoardUserRoleDaoTest.java" />
         <option value="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardDao.java" />
         <option value="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardColumnDao.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardUserRoleDao.java" />
       </list>
     </option>
   </component>
@@ -273,7 +212,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -398,12 +336,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enums" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="agile-tool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="agile-tool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markvarabyou" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="sql" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -423,14 +388,14 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
-    <property name="FullScreen" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="dynamic.classpath" value="false" />
     <property name="Downloaded.Files.Path" value="C:\Users\Mark\Documents\java-learn\agile-tool\lib" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -513,7 +478,13 @@
       </option>
       <envs />
       <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -529,19 +500,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -569,6 +527,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -765,66 +736,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/entities/BoardUserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="25" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/entities/WorkItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/entities/interfaces/EntityDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlWorkItemDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="16" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardUserRoleDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="15" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="33" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="33" selection-start="3628" selection-end="3929" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/entities/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="19" selection-start="847" selection-end="847" vertical-scroll-proportion="0.5767098">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/entities/Board.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="41" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0">
@@ -832,32 +743,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/markvarabyou/dao/sql/helpers/SqlAgileToolDaoTestHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/entities/BoardColumn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="4" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="41" column="20" selection-start="783" selection-end="783" vertical-scroll-proportion="0.44642857">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/entities/WorkItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="48" selection-start="1978" selection-end="1978" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/org/markvarabyou/dao/sql/SqlUserDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="29" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/entities/BoardColumn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="20" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/markvarabyou/dao/sql/SqlBoardColumnDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="43" selection-start="775" selection-end="775" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -869,22 +771,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardDao.java">
+    <entry file="file://$PROJECT_DIR$/test/org/markvarabyou/dao/sql/helpers/SqlAgileToolDaoTestHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="40" selection-start="3843" selection-end="3843" vertical-scroll-proportion="0.0">
+        <state line="2" column="0" selection-start="43" selection-end="43" vertical-scroll-proportion="0.060714286">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2690#2697#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/entities/interfaces/EntityDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="27" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/entities/interfaces/RelationEntityDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="32" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlWorkItemDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="4" selection-start="412" selection-end="412" vertical-scroll-proportion="0.3469388">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/org/markvarabyou/dao/sql/SqlBoardColumnDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="0" selection-start="2114" selection-end="2114" vertical-scroll-proportion="0.13172542">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.18.jar!/com/mysql/jdbc/PreparedStatement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="299" column="15" selection-start="18920" selection-end="18920" vertical-scroll-proportion="0.20758483">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/entities/BoardUserRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="-0.12321428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/org/markvarabyou/dao/sql/SqlBoardUserRoleDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="40" selection-start="3971" selection-end="3971" vertical-scroll-proportion="3.8553572">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardColumnDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="94" selection-start="1756" selection-end="1756" vertical-scroll-proportion="0.45825604">
+        <state line="52" column="10" selection-start="2100" selection-end="2100" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="17" selection-start="1844" selection-end="1844" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2864#2877#0" expanded="true" />
+            <element signature="e#2654#2661#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardUserRoleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2845#2860#0" expanded="true" />
           </folding>
         </state>
       </provider>

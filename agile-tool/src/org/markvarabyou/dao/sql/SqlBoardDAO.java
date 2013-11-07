@@ -50,9 +50,7 @@ public class SqlBoardDao extends SqlDao implements EntityDao<Board> {
                 key = resultSet.getInt(1);
                 board = read(key);
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        } catch (SQLException ignored) {}
         closeStatement();
         return board;
     }

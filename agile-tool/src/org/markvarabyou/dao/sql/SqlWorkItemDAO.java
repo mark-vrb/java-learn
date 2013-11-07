@@ -3,6 +3,7 @@ package org.markvarabyou.dao.sql;
 import org.markvarabyou.entities.WorkItem;
 import org.markvarabyou.entities.interfaces.EntityDao;
 
+import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
@@ -12,7 +13,11 @@ import java.util.LinkedList;
  * Date: 10/25/13
  * Time: 1:18 PM
  */
-public class SqlWorkItemDao implements EntityDao<WorkItem> {
+public class SqlWorkItemDao extends SqlDao implements EntityDao<WorkItem> {
+    public SqlWorkItemDao(Connection connection) {
+        super(connection);
+    }
+
     @Override
     public WorkItem create(WorkItem entity) {
         return null;  //To change body of implemented methods use File | Settings | File Templates.

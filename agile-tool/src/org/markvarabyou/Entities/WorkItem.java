@@ -83,4 +83,17 @@ public class WorkItem {
     public void setType(WorkItemType type) {
         this.type = type;
     }
+
+    public WorkItem(){}
+
+    public WorkItem(String name, String description, Date creationDate,
+                    int createdByUserId, int assigneeUserId, byte size, WorkItemType type){
+        this.name = name;
+        this.description = description;
+        this.creationDate = creationDate;
+        this.createdByUserId = createdByUserId;
+        this.assigneeUserId = assigneeUserId;
+        this.size = size;
+        this.type = type;
+    }
 }

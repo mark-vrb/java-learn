@@ -50,9 +50,7 @@ public class SqlBoardColumnDao extends SqlDao implements EntityDao<BoardColumn> 
                 key = resultSet.getInt(1);
                 boardColumn = read(key);
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        } catch (SQLException ignored) {}
         closeStatement();
         return boardColumn;
     }

@@ -36,4 +36,12 @@ public class BoardUserRole {
     public void setType(BoardUserRoleType type) {
         this.type = type;
     }
+
+    public BoardUserRole(){}
+
+    public BoardUserRole(int boardId, int userId, BoardUserRoleType type){
+        this.boardId = boardId;
+        this.userId = userId;
+        this.type = type;
+    }
 }
