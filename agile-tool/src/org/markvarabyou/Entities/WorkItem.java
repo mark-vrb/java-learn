@@ -19,6 +19,8 @@ public class WorkItem {
     private int assigneeUserId;
     private byte size;
     private WorkItemType type;
+    private int boardId;
+    private int boardColumnId;
 
     public int getId() {
         return id;
@@ -84,10 +86,27 @@ public class WorkItem {
         this.type = type;
     }
 
+    public int getBoardId() {
+        return boardId;
+    }
+
+    public void setBoardId(int boardId) {
+        this.boardId = boardId;
+    }
+
+    public int getBoardColumnId() {
+        return boardColumnId;
+    }
+
+    public void setBoardColumnId(int boardColumnId) {
+        this.boardColumnId = boardColumnId;
+    }
+
     public WorkItem(){}
 
     public WorkItem(String name, String description, Date creationDate,
-                    int createdByUserId, int assigneeUserId, byte size, WorkItemType type){
+                    int createdByUserId, int assigneeUserId, byte size,
+                    WorkItemType type, int boardId, int boardColumnId){
         this.name = name;
         this.description = description;
         this.creationDate = creationDate;
@@ -95,5 +114,7 @@ public class WorkItem {
         this.assigneeUserId = assigneeUserId;
         this.size = size;
         this.type = type;
+        this.boardId = boardId;
+        this.boardColumnId = boardColumnId;
     }
 }
