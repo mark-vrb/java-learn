@@ -15,3 +15,15 @@ Class for performing math operations with matrices, such as multiplying. There a
 - Class `SymbolsUsageStatistics` can read text file and calculate statistics of usage for all symbols from this file.
 - Read/write from/to file for `Matrix` class (arraylistbased) with `Reader` and `Writer`.
 - Serialization for `Matrix` class (arraylistbased) with `ObjectInputStream` and `ObjectOutputStream`.
+
+4. Threading
+------------
+> **NOTE:** To be implemented 
+
+5. Jdbc
+-------
+DAO layer for agile-tool aplication with simple CRUD logic. Using jdbc connector for MySQL. Entities: `User`, `Board`, `BoardColumn`, `WorkItem`, `BoardUserRole`. Corresponding scheme should be deployed to local instance of MySQL.
+
+6. Unit testing, logging
+------------------------
+Unit tests with [JUnit4](http://junit.org/) for DAO layer of agile-tool app, errors logging with [Log4j2](http://logging.apache.org/log4j/2.x/). Log4j2 package added via Maven.
