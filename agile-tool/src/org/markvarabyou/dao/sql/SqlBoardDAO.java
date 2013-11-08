@@ -1,5 +1,7 @@
 package org.markvarabyou.dao.sql;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.markvarabyou.entities.Board;
 import org.markvarabyou.entities.interfaces.EntityDao;
 
@@ -21,6 +23,8 @@ public class SqlBoardDao extends SqlDao implements EntityDao<Board> {
     static final String READ_QUERY = "SELECT * FROM boards WHERE id = ?";
     static final String UPDATE_QUERY = "UPDATE boards SET name = ?, created_by_user_id = ?, creation_date = ? WHERE id = ?";
     static final String DELETE_QUERY = "DELETE FROM boards WHERE id = ?";
+
+    private static Logger logger = LogManager.getLogger(SqlBoardDao.class.getName());
 
     public SqlBoardDao(Connection connection) {
         super(connection);
@@ -50,7 +54,9 @@ public class SqlBoardDao extends SqlDao implements EntityDao<Board> {
                 key = resultSet.getInt(1);
                 board = read(key);
             }
-        } catch (SQLException ignored) {}
+        } catch (SQLException e) {
+            logger.error(e);
+        }
         closeStatement();
         return board;
     }
@@ -66,7 +72,7 @@ public class SqlBoardDao extends SqlDao implements EntityDao<Board> {
                 board = getBoardFromResultSet(resultSet);
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         closeStatement();
         return board;
@@ -83,7 +89,7 @@ public class SqlBoardDao extends SqlDao implements EntityDao<Board> {
             }
             resultSet.close();
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         closeStatement();
         return boards;
@@ -102,7 +108,7 @@ public class SqlBoardDao extends SqlDao implements EntityDao<Board> {
                 board = read(entity.getId());
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         closeStatement();
         return board;
@@ -116,7 +122,7 @@ public class SqlBoardDao extends SqlDao implements EntityDao<Board> {
             statement.setInt(1, id);
             affectedRows = statement.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         closeStatement();
         return affectedRows != 0;

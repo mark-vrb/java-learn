@@ -1,8 +1,8 @@
 package org.markvarabyou.dao.sql;
 
-import org.markvarabyou.entities.BoardColumn;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.markvarabyou.entities.WorkItem;
-import org.markvarabyou.entities.enums.BoardColumnType;
 import org.markvarabyou.entities.enums.WorkItemType;
 import org.markvarabyou.entities.interfaces.EntityDao;
 
@@ -11,7 +11,6 @@ import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.LinkedList;
 
 /**
  * Sql-based Data Access Object for WorkItem.
@@ -25,8 +24,10 @@ public class SqlWorkItemDao extends SqlDao implements EntityDao<WorkItem> {
             "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);";
     static final String READ_ALL_QUERY = "SELECT * FROM work_items";
     static final String READ_QUERY = "SELECT * FROM work_items WHERE id = ?";
-    static final String UPDATE_QUERY = "UPDATE work_items SET name = ?, description = ?, assignee_user_id = ?, size = ?, type = ?, board_column_id = ? WHERE id = ?"; //TODO: here
+    static final String UPDATE_QUERY = "UPDATE work_items SET name = ?, description = ?, assignee_user_id = ?, size = ?, type = ?, board_column_id = ? WHERE id = ?";
     static final String DELETE_QUERY = "DELETE FROM work_items WHERE id = ?";
+
+    private static Logger logger = LogManager.getLogger(SqlWorkItemDao.class.getName());
 
     public SqlWorkItemDao(Connection connection) {
         super(connection);
@@ -68,7 +69,9 @@ public class SqlWorkItemDao extends SqlDao implements EntityDao<WorkItem> {
                 key = resultSet.getInt(1);
                 workItem = read(key);
             }
-        } catch (SQLException ignored) {}
+        } catch (SQLException e) {
+            logger.error(e);
+        }
         closeStatement();
         return workItem;
     }
@@ -84,7 +87,7 @@ public class SqlWorkItemDao extends SqlDao implements EntityDao<WorkItem> {
                 workItem = getWorkItemFromResultSet(resultSet);
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         closeStatement();
         return workItem;
@@ -101,7 +104,7 @@ public class SqlWorkItemDao extends SqlDao implements EntityDao<WorkItem> {
             }
             resultSet.close();
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         closeStatement();
         return workItems;
@@ -123,7 +126,7 @@ public class SqlWorkItemDao extends SqlDao implements EntityDao<WorkItem> {
                 workItem = read(entity.getId());
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         closeStatement();
         return workItem;
@@ -137,7 +140,7 @@ public class SqlWorkItemDao extends SqlDao implements EntityDao<WorkItem> {
             statement.setInt(1, id);
             affectedRows = statement.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         closeStatement();
         return affectedRows != 0;

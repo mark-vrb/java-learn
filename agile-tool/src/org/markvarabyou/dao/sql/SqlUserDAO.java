@@ -1,5 +1,7 @@
 package org.markvarabyou.dao.sql;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.markvarabyou.entities.User;
 import org.markvarabyou.entities.interfaces.EntityDao;
 
@@ -20,6 +22,8 @@ public class SqlUserDao extends SqlDao implements EntityDao<User> {
     static final String READ_QUERY = "SELECT * FROM users WHERE id = ?";
     static final String UPDATE_QUERY = "UPDATE users SET first_name = ?, last_name = ?, email = ? WHERE id = ?";
     static final String DELETE_QUERY = "DELETE FROM users WHERE id = ?";
+
+    private static Logger logger = LogManager.getLogger(SqlUserDao.class.getName());
 
     public SqlUserDao(Connection connection) {
         super(connection);
@@ -50,7 +54,7 @@ public class SqlUserDao extends SqlDao implements EntityDao<User> {
                 user = read(key);
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         closeStatement();
         return user;
@@ -67,7 +71,7 @@ public class SqlUserDao extends SqlDao implements EntityDao<User> {
                 user = getUserFromResultSet(resultSet);
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         closeStatement();
         return user;
@@ -84,7 +88,7 @@ public class SqlUserDao extends SqlDao implements EntityDao<User> {
             }
             resultSet.close();
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         closeStatement();
         return userList;
@@ -103,7 +107,7 @@ public class SqlUserDao extends SqlDao implements EntityDao<User> {
                 user = read(entity.getId());
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         closeStatement();
         return user;
@@ -117,7 +121,7 @@ public class SqlUserDao extends SqlDao implements EntityDao<User> {
             statement.setInt(1, id);
             affectedRows = statement.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         closeStatement();
         return affectedRows != 0;

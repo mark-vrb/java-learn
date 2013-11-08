@@ -1,5 +1,7 @@
 package org.markvarabyou.dao.sql;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.markvarabyou.entities.BoardColumn;
 import org.markvarabyou.entities.enums.BoardColumnType;
 import org.markvarabyou.entities.interfaces.EntityDao;
@@ -21,6 +23,8 @@ public class SqlBoardColumnDao extends SqlDao implements EntityDao<BoardColumn> 
     static final String READ_QUERY = "SELECT * FROM board_columns WHERE id = ?";
     static final String UPDATE_QUERY = "UPDATE board_columns SET name = ?, type = ?, board_id = ? WHERE id = ?";
     static final String DELETE_QUERY = "DELETE FROM board_columns WHERE id = ?";
+
+    private static Logger logger = LogManager.getLogger(SqlBoardColumnDao.class.getName());
 
     public SqlBoardColumnDao(Connection connection) {
         super(connection);
@@ -50,7 +54,9 @@ public class SqlBoardColumnDao extends SqlDao implements EntityDao<BoardColumn> 
                 key = resultSet.getInt(1);
                 boardColumn = read(key);
             }
-        } catch (SQLException ignored) {}
+        } catch (SQLException e) {
+            logger.error(e);
+        }
         closeStatement();
         return boardColumn;
     }
@@ -66,7 +72,7 @@ public class SqlBoardColumnDao extends SqlDao implements EntityDao<BoardColumn> 
                 boardColumn = getBoardColumnFromResultSet(resultSet);
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         closeStatement();
         return boardColumn;
@@ -83,7 +89,7 @@ public class SqlBoardColumnDao extends SqlDao implements EntityDao<BoardColumn> 
             }
             resultSet.close();
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         closeStatement();
         return boardColumns;
@@ -102,7 +108,7 @@ public class SqlBoardColumnDao extends SqlDao implements EntityDao<BoardColumn> 
                 boardColumn = read(entity.getId());
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         closeStatement();
         return boardColumn;
@@ -116,7 +122,7 @@ public class SqlBoardColumnDao extends SqlDao implements EntityDao<BoardColumn> 
             statement.setInt(1, id);
             affectedRows = statement.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         closeStatement();
         return affectedRows != 0;

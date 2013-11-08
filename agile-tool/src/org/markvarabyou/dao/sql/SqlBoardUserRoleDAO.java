@@ -1,5 +1,7 @@
 package org.markvarabyou.dao.sql;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.markvarabyou.entities.BoardUserRole;
 import org.markvarabyou.entities.enums.BoardUserRoleType;
 import org.markvarabyou.entities.interfaces.RelationEntityDao;
@@ -21,6 +23,8 @@ public class SqlBoardUserRoleDao extends SqlDao implements RelationEntityDao<Boa
     static final String READ_QUERY = "SELECT * FROM board_user_roles WHERE board_id = ? AND user_id = ?";
     static final String UPDATE_QUERY = "UPDATE board_user_roles SET type = ? WHERE board_id = ? AND user_id = ?";
     static final String DELETE_QUERY = "DELETE FROM board_user_roles WHERE board_id = ? AND user_id = ?";
+
+    private static Logger logger = LogManager.getLogger(SqlBoardUserRoleDao.class.getName());
 
     public SqlBoardUserRoleDao(Connection connection) {
         super(connection);
@@ -45,7 +49,9 @@ public class SqlBoardUserRoleDao extends SqlDao implements RelationEntityDao<Boa
             if (statement.executeUpdate() == 1) {
                 boardUserRole = read(entity.getBoardId(), entity.getUserId());
             }
-        } catch (SQLException ignored) {}
+        } catch (SQLException e) {
+            logger.error(e);
+        }
         closeStatement();
         return boardUserRole;
     }
@@ -62,7 +68,7 @@ public class SqlBoardUserRoleDao extends SqlDao implements RelationEntityDao<Boa
                 boardUserRole = getBoardUserRoleFromResultSet(resultSet);
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         closeStatement();
         return boardUserRole;
@@ -79,7 +85,7 @@ public class SqlBoardUserRoleDao extends SqlDao implements RelationEntityDao<Boa
             }
             resultSet.close();
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         closeStatement();
         return boardUserRoles;
@@ -97,7 +103,7 @@ public class SqlBoardUserRoleDao extends SqlDao implements RelationEntityDao<Boa
                 boardUserRole = read(entity.getBoardId(), entity.getUserId());
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         closeStatement();
         return boardUserRole;
@@ -112,7 +118,7 @@ public class SqlBoardUserRoleDao extends SqlDao implements RelationEntityDao<Boa
             statement.setInt(2, secondId);
             affectedRows = statement.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         closeStatement();
         return affectedRows != 0;

@@ -1,5 +1,8 @@
 package org.markvarabyou.dao.sql;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.sql.*;
 
 /**
@@ -14,6 +17,8 @@ public abstract class SqlDao {
     protected Connection connection = null;
     protected PreparedStatement statement = null;
 
+    private static Logger logger = LogManager.getLogger(SqlDao.class.getName());
+
     public SqlDao(Connection connection){
         this.connection = connection;
     }
@@ -23,9 +28,9 @@ public abstract class SqlDao {
             Class.forName(JDBC_DRIVER);
             statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
     }
 
@@ -33,7 +38,7 @@ public abstract class SqlDao {
         try {
             statement.close();
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
     }
 }
