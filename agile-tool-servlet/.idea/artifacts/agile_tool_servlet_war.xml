@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="agile-tool-servlet:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="agile-tool-servlet.war">
+      <element id="artifact" artifact-name="agile-tool-servlet:war exploded" />
+    </root>
+  </artifact>
+</component>
