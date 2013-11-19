@@ -1,6 +1,6 @@
 Welcome to java-learn
 =====================
-My Java language university learning. Builded with [IntelliJ IDEA Community Edition](http://www.jetbrains.com/idea/free_java_ide.html).
+My Java language university learning. Builded with [IntelliJ IDEA](http://www.jetbrains.com/idea/).
 
 1. Hello world
 --------------
@@ -26,4 +26,8 @@ DAO layer for agile-tool aplication with simple CRUD logic. Using jdbc connector
 
 6. Unit testing, logging
 ------------------------
-Unit tests with [JUnit4](http://junit.org/) for DAO layer of agile-tool app, errors logging with [Log4j2](http://logging.apache.org/log4j/2.x/). Log4j2 package added via Maven.
+Unit tests with [JUnit4](http://junit.org/) for DAO layer of agile-tool app, errors logging with [Log4j2](http://logging.apache.org/log4j/2.x/). Log4j2 package added via Maven. Log4j settings file `log4j2.xml` added to resources folder.
+
+7. Build tools
+--------------
+Maven settings file `pom.xml` for agile-tool project created and configured.
