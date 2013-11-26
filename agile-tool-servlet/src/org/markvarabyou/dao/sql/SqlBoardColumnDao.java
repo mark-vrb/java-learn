@@ -1,9 +1,8 @@
 package org.markvarabyou.dao.sql;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.markvarabyou.entities.BoardColumn;
 import org.markvarabyou.entities.enums.BoardColumnType;
+import org.markvarabyou.entities.exceptions.DaoException;
 import org.markvarabyou.entities.interfaces.EntityDao;
 
 import java.sql.Connection;
@@ -24,8 +23,6 @@ public class SqlBoardColumnDao extends SqlDao implements EntityDao<BoardColumn> 
     static final String UPDATE_QUERY = "UPDATE board_columns SET name = ?, type = ?, board_id = ? WHERE id = ?";
     static final String DELETE_QUERY = "DELETE FROM board_columns WHERE id = ?";
 
-    private static Logger logger = LogManager.getLogger(SqlBoardColumnDao.class.getName());
-
     public SqlBoardColumnDao(Connection connection) {
         super(connection);
     }
@@ -40,10 +37,10 @@ public class SqlBoardColumnDao extends SqlDao implements EntityDao<BoardColumn> 
     }
 
     @Override
-    public BoardColumn create(BoardColumn entity) {
-        setupStatement(CREATE_QUERY);
+    public BoardColumn create(BoardColumn entity) throws DaoException {
         BoardColumn boardColumn = null;
         try {
+            setupStatement(CREATE_QUERY);
             statement.setString(1, entity.getName());
             statement.setInt(2, entity.getType().ordinal());
             statement.setInt(3, entity.getBoardId());
@@ -54,77 +51,77 @@ public class SqlBoardColumnDao extends SqlDao implements EntityDao<BoardColumn> 
                 key = resultSet.getInt(1);
                 boardColumn = read(key);
             }
+            closeStatement();
         } catch (SQLException e) {
-            logger.error(e);
+            throw new DaoException(e);
         }
-        closeStatement();
         return boardColumn;
     }
 
     @Override
-    public BoardColumn read(int id) {
+    public BoardColumn read(int id) throws DaoException {
         BoardColumn boardColumn = null;
-        setupStatement(READ_QUERY);
         try {
+            setupStatement(READ_QUERY);
             statement.setInt(1, id);
             ResultSet resultSet = statement.executeQuery();
             if (resultSet != null && resultSet.next()) {
                 boardColumn = getBoardColumnFromResultSet(resultSet);
             }
+            closeStatement();
         } catch (SQLException e) {
-            logger.error(e);
+            throw new DaoException(e);
         }
-        closeStatement();
         return boardColumn;
     }
 
     @Override
-    public ArrayList<BoardColumn> read() {
+    public ArrayList<BoardColumn> read() throws DaoException {
         ArrayList<BoardColumn> boardColumns = new ArrayList<BoardColumn>();
-        setupStatement(READ_ALL_QUERY);
-        try{
+        try {
+            setupStatement(READ_ALL_QUERY);
             ResultSet resultSet = statement.executeQuery();
-            while(resultSet.next()){
+            while (resultSet.next()) {
                 boardColumns.add(getBoardColumnFromResultSet(resultSet));
             }
             resultSet.close();
+            closeStatement();
         } catch (SQLException e) {
-            logger.error(e);
+            throw new DaoException(e);
         }
-        closeStatement();
         return boardColumns;
     }
 
     @Override
-    public BoardColumn update(BoardColumn entity) {
-        setupStatement(UPDATE_QUERY);
+    public BoardColumn update(BoardColumn entity) throws DaoException {
         BoardColumn boardColumn = null;
         try {
+            setupStatement(UPDATE_QUERY);
             statement.setString(1, entity.getName());
             statement.setInt(2, entity.getType().ordinal());
             statement.setInt(3, entity.getBoardId());
             statement.setInt(4, entity.getId());
-            if (statement.executeUpdate() == 1){
+            if (statement.executeUpdate() == 1) {
                 boardColumn = read(entity.getId());
             }
+            closeStatement();
         } catch (SQLException e) {
-            logger.error(e);
+            throw new DaoException(e);
         }
-        closeStatement();
         return boardColumn;
     }
 
     @Override
-    public boolean delete(int id) {
-        setupStatement(DELETE_QUERY);
-        int affectedRows = 0;
-        try{
+    public boolean delete(int id) throws DaoException {
+        int affectedRows;
+        try {
+            setupStatement(DELETE_QUERY);
             statement.setInt(1, id);
             affectedRows = statement.executeUpdate();
+            closeStatement();
         } catch (SQLException e) {
-            logger.error(e);
+            throw new DaoException(e);
         }
-        closeStatement();
         return affectedRows != 0;
     }
 }

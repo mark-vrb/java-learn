@@ -1,9 +1,8 @@
 package org.markvarabyou.dao.sql;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.markvarabyou.entities.WorkItem;
 import org.markvarabyou.entities.enums.WorkItemType;
+import org.markvarabyou.entities.exceptions.DaoException;
 import org.markvarabyou.entities.interfaces.EntityDao;
 
 import java.sql.Connection;
@@ -27,8 +26,6 @@ public class SqlWorkItemDao extends SqlDao implements EntityDao<WorkItem> {
     static final String UPDATE_QUERY = "UPDATE work_items SET name = ?, description = ?, assignee_user_id = ?, size = ?, type = ?, board_column_id = ? WHERE id = ?";
     static final String DELETE_QUERY = "DELETE FROM work_items WHERE id = ?";
 
-    private static Logger logger = LogManager.getLogger(SqlWorkItemDao.class.getName());
-
     public SqlWorkItemDao(Connection connection) {
         super(connection);
     }
@@ -49,10 +46,10 @@ public class SqlWorkItemDao extends SqlDao implements EntityDao<WorkItem> {
     }
 
     @Override
-    public WorkItem create(WorkItem entity) {
-        setupStatement(CREATE_QUERY);
+    public WorkItem create(WorkItem entity) throws DaoException {
         WorkItem workItem = null;
         try {
+            setupStatement(CREATE_QUERY);
             statement.setString(1, entity.getName());
             statement.setString(2, entity.getDescription());
             statement.setInt(3, entity.getCreatedByUserId());
@@ -69,52 +66,52 @@ public class SqlWorkItemDao extends SqlDao implements EntityDao<WorkItem> {
                 key = resultSet.getInt(1);
                 workItem = read(key);
             }
+            closeStatement();
         } catch (SQLException e) {
-            logger.error(e);
+            throw new DaoException(e);
         }
-        closeStatement();
         return workItem;
     }
 
     @Override
-    public WorkItem read(int id) {
+    public WorkItem read(int id) throws DaoException {
         WorkItem workItem = null;
-        setupStatement(READ_QUERY);
         try {
+            setupStatement(READ_QUERY);
             statement.setInt(1, id);
             ResultSet resultSet = statement.executeQuery();
             if (resultSet != null && resultSet.next()) {
                 workItem = getWorkItemFromResultSet(resultSet);
             }
+            closeStatement();
         } catch (SQLException e) {
-            logger.error(e);
+            throw new DaoException(e);
         }
-        closeStatement();
         return workItem;
     }
 
     @Override
-    public ArrayList<WorkItem> read() {
+    public ArrayList<WorkItem> read() throws DaoException {
         ArrayList<WorkItem> workItems = new ArrayList<WorkItem>();
-        setupStatement(READ_ALL_QUERY);
-        try{
+        try {
+            setupStatement(READ_ALL_QUERY);
             ResultSet resultSet = statement.executeQuery();
-            while(resultSet.next()){
+            while (resultSet.next()) {
                 workItems.add(getWorkItemFromResultSet(resultSet));
             }
             resultSet.close();
+            closeStatement();
         } catch (SQLException e) {
-            logger.error(e);
+            throw new DaoException(e);
         }
-        closeStatement();
         return workItems;
     }
 
     @Override
-    public WorkItem update(WorkItem entity) {
-        setupStatement(UPDATE_QUERY);
+    public WorkItem update(WorkItem entity) throws DaoException {
         WorkItem workItem = null;
         try {
+            setupStatement(UPDATE_QUERY);
             statement.setString(1, entity.getName());
             statement.setString(2, entity.getDescription());
             statement.setInt(3, entity.getAssigneeUserId());
@@ -122,27 +119,27 @@ public class SqlWorkItemDao extends SqlDao implements EntityDao<WorkItem> {
             statement.setInt(5, entity.getType().ordinal());
             statement.setInt(6, entity.getBoardColumnId());
             statement.setInt(7, entity.getId());
-            if (statement.executeUpdate() == 1){
+            if (statement.executeUpdate() == 1) {
                 workItem = read(entity.getId());
             }
+            closeStatement();
         } catch (SQLException e) {
-            logger.error(e);
+            throw new DaoException(e);
         }
-        closeStatement();
         return workItem;
     }
 
     @Override
-    public boolean delete(int id) {
-        setupStatement(DELETE_QUERY);
-        int affectedRows = 0;
-        try{
+    public boolean delete(int id) throws DaoException {
+        int affectedRows;
+        try {
+            setupStatement(DELETE_QUERY);
             statement.setInt(1, id);
             affectedRows = statement.executeUpdate();
+            closeStatement();
         } catch (SQLException e) {
-            logger.error(e);
+            throw new DaoException(e);
         }
-        closeStatement();
         return affectedRows != 0;
     }
 }

@@ -1,62 +1,89 @@
 package org.markvarabyou.servlets;
 
-import com.google.gson.Gson;
-import org.markvarabyou.entities.User;
-import org.markvarabyou.servlets.utilities.DaoFactory;
+import org.markvarabyou.services.exceptions.EntityCreationFailedException;
+import org.markvarabyou.services.exceptions.EntityNotFoundException;
+import org.markvarabyou.services.exceptions.EntityUpdateFailedException;
+import org.markvarabyou.services.exceptions.InternalDaoException;
+import org.markvarabyou.servlets.utilities.ServletUtilities;
+import org.markvarabyou.servlets.utilities.ServiceFactory;
+import org.markvarabyou.servlets.utilities.exceptions.ServiceSetupException;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.sql.SQLException;
-import java.util.ArrayList;
 
 public class UsersServlet extends HttpServlet {
+    private ServiceFactory services = new ServiceFactory();
+    private ServletUtilities utilities = new ServletUtilities();
+
     public void doGet(HttpServletRequest request, HttpServletResponse response) {
-        try {
-            Integer id = getIdFromRequest(request);
-            DaoFactory daoFactory = new DaoFactory();
-            if (id != null) {
-                User user = daoFactory.getSqlUserDao().read(id);
-                if (user == null) {
-                    response.setStatus(404);
-                    return;
-                }
-                sendJsonResult(response, user);
-            } else {
-                ArrayList<User> users = daoFactory.getSqlUserDao().read();
-                sendJsonResult(response, users);
+        Integer id = utilities.getIdFromRequestParameter(request);
+        if (id == null)
+        {
+            String json = null;
+            try {
+                json = services.getUsersService().get();
+            } catch (InternalDaoException e) {
+                response.setStatus(400);
+            } catch (ServiceSetupException e) {
+                response.setStatus(400);
             }
-        } catch (IOException e) {
-            response.setStatus(500);
-            e.printStackTrace();
-        } catch (SQLException e) {
-            response.setStatus(500);
-            e.printStackTrace();
+            utilities.setJsonToResponseBody(response, json);
+            return;
+        }
+        // Id not provided, returning all entities.
+        try {
+            String json = services.getUsersService().get(id);
+            utilities.setJsonToResponseBody(response, json);
+        } catch (EntityNotFoundException e) {
+            response.setStatus(404);
+        } catch (InternalDaoException e) {
+            response.setStatus(400);
+        } catch (ServiceSetupException e) {
+            response.setStatus(400);
         }
     }
 
-    private void sendJsonResult(HttpServletResponse response, Object object) throws IOException {
-        response.setContentType("application/json");
-        PrintWriter out = response.getWriter();
-        Gson gson = new Gson();
-        out.print(gson.toJson(object));
-    }
-
-    private Integer getIdFromRequest(HttpServletRequest request){
-        String paramString = request.getParameter("id");
-        Integer id = Integer.getInteger(paramString);
-        return id;
-    }
-
     public void doPost(HttpServletRequest request, HttpServletResponse response) {
+        String inputJson = utilities.getJsonFromRequestBody(request);
+        try {
+            String outputJson = services.getUsersService().post(inputJson);
+            utilities.setJsonToResponseBody(response, outputJson);
+        } catch (EntityCreationFailedException e) {
+            response.setStatus(400);
+        } catch (ServiceSetupException e) {
+            response.setStatus(400);
+        }
     }
 
     public void doPut(HttpServletRequest request, HttpServletResponse response) {
+        Integer id = utilities.getIdFromRequestParameter(request);
+        String inputJson = utilities.getJsonFromRequestBody(request);
+        if (id != null)
+        {
+            try {
+                String outputJson = services.getUsersService().put(id, inputJson);
+                utilities.setJsonToResponseBody(response, outputJson);
+            } catch (EntityUpdateFailedException e) {
+                response.setStatus(400);
+            } catch (ServiceSetupException e) {
+                response.setStatus(400);
+            }
+            return;
+        }
+        response.setStatus(404);
     }
 
-    public void doDelete(HttpServletRequest request, HttpServletResponse response){
-
+    public void doDelete(HttpServletRequest request, HttpServletResponse response) {
+        Integer id = utilities.getIdFromRequestParameter(request);
+        try {
+            services.getUsersService().delete(id);
+        } catch (EntityNotFoundException e) {
+            response.setStatus(404);
+        } catch (ServiceSetupException e) {
+            response.setStatus(400);
+        } catch (InternalDaoException e) {
+            response.setStatus(400);
+        }
     }
 }

@@ -1,8 +1,7 @@
 package org.markvarabyou.dao.sql;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.markvarabyou.entities.Board;
+import org.markvarabyou.entities.exceptions.DaoException;
 import org.markvarabyou.entities.interfaces.EntityDao;
 
 import java.sql.Connection;
@@ -24,8 +23,6 @@ public class SqlBoardDao extends SqlDao implements EntityDao<Board> {
     static final String UPDATE_QUERY = "UPDATE boards SET name = ?, created_by_user_id = ?, creation_date = ? WHERE id = ?";
     static final String DELETE_QUERY = "DELETE FROM boards WHERE id = ?";
 
-    private static Logger logger = LogManager.getLogger(SqlBoardDao.class.getName());
-
     public SqlBoardDao(Connection connection) {
         super(connection);
     }
@@ -40,10 +37,10 @@ public class SqlBoardDao extends SqlDao implements EntityDao<Board> {
     }
 
     @Override
-    public Board create(Board entity) {
-        setupStatement(CREATE_QUERY);
+    public Board create(Board entity) throws DaoException {
         Board board = null;
         try {
+            setupStatement(CREATE_QUERY);
             statement.setString(1, entity.getName());
             statement.setInt(2, entity.getCreatedByUserId());
             statement.setDate(3, new Date(entity.getCreationDate().getTime()));
@@ -54,77 +51,77 @@ public class SqlBoardDao extends SqlDao implements EntityDao<Board> {
                 key = resultSet.getInt(1);
                 board = read(key);
             }
+            closeStatement();
         } catch (SQLException e) {
-            logger.error(e);
+            throw new DaoException(e);
         }
-        closeStatement();
         return board;
     }
 
     @Override
-    public Board read(int id) {
+    public Board read(int id) throws DaoException {
         Board board = null;
-        setupStatement(READ_QUERY);
         try {
+            setupStatement(READ_QUERY);
             statement.setInt(1, id);
             ResultSet resultSet = statement.executeQuery();
             if (resultSet != null && resultSet.next()) {
                 board = getBoardFromResultSet(resultSet);
             }
+            closeStatement();
         } catch (SQLException e) {
-            logger.error(e);
+            throw new DaoException(e);
         }
-        closeStatement();
         return board;
     }
 
     @Override
-    public ArrayList<Board> read() {
+    public ArrayList<Board> read() throws DaoException {
         ArrayList<Board> boards = new ArrayList<Board>();
-        setupStatement(READ_ALL_QUERY);
-        try{
+        try {
+            setupStatement(READ_ALL_QUERY);
             ResultSet resultSet = statement.executeQuery();
-            while(resultSet.next()){
+            while (resultSet.next()) {
                 boards.add(getBoardFromResultSet(resultSet));
             }
             resultSet.close();
+            closeStatement();
         } catch (SQLException e) {
-            logger.error(e);
+            throw new DaoException(e);
         }
-        closeStatement();
         return boards;
     }
 
     @Override
-    public Board update(Board entity) {
-        setupStatement(UPDATE_QUERY);
+    public Board update(Board entity) throws DaoException {
         Board board = null;
         try {
+            setupStatement(UPDATE_QUERY);
             statement.setString(1, entity.getName());
             statement.setInt(2, entity.getCreatedByUserId());
             statement.setDate(3, new Date(entity.getCreationDate().getTime()));
             statement.setInt(4, entity.getId());
-            if (statement.executeUpdate() == 1){
+            if (statement.executeUpdate() == 1) {
                 board = read(entity.getId());
             }
+            closeStatement();
         } catch (SQLException e) {
-            logger.error(e);
+            throw new DaoException(e);
         }
-        closeStatement();
         return board;
     }
 
     @Override
-    public boolean delete(int id) {
-        setupStatement(DELETE_QUERY);
-        int affectedRows = 0;
-        try{
+    public boolean delete(int id) throws DaoException {
+        int affectedRows;
+        try {
+            setupStatement(DELETE_QUERY);
             statement.setInt(1, id);
             affectedRows = statement.executeUpdate();
+            closeStatement();
         } catch (SQLException e) {
-            logger.error(e);
+            throw new DaoException(e);
         }
-        closeStatement();
         return affectedRows != 0;
     }
 }

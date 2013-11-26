@@ -1,8 +1,7 @@
 package org.markvarabyou.dao.sql;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.markvarabyou.entities.User;
+import org.markvarabyou.entities.exceptions.DaoException;
 import org.markvarabyou.entities.interfaces.EntityDao;
 
 import java.sql.Connection;
@@ -23,8 +22,6 @@ public class SqlUserDao extends SqlDao implements EntityDao<User> {
     static final String UPDATE_QUERY = "UPDATE users SET first_name = ?, last_name = ?, email = ? WHERE id = ?";
     static final String DELETE_QUERY = "DELETE FROM users WHERE id = ?";
 
-    private static Logger logger = LogManager.getLogger(SqlUserDao.class.getName());
-
     public SqlUserDao(Connection connection) {
         super(connection);
     }
@@ -39,10 +36,10 @@ public class SqlUserDao extends SqlDao implements EntityDao<User> {
     }
 
     @Override
-    public User create(User entity) {
-        setupStatement(CREATE_QUERY);
+    public User create(User entity) throws DaoException {
         User user = null;
         try {
+            setupStatement(CREATE_QUERY);
             statement.setString(1, entity.getFirstName());
             statement.setString(2, entity.getLastName());
             statement.setString(3, entity.getEmail());
@@ -53,77 +50,77 @@ public class SqlUserDao extends SqlDao implements EntityDao<User> {
                 key = resultSet.getInt(1);
                 user = read(key);
             }
+            closeStatement();
         } catch (SQLException e) {
-            logger.error(e);
+            throw new DaoException(e);
         }
-        closeStatement();
         return user;
     }
 
     @Override
-    public User read(int id) {
+    public User read(int id) throws DaoException {
         User user = null;
-        setupStatement(READ_QUERY);
         try {
+            setupStatement(READ_QUERY);
             statement.setInt(1, id);
             ResultSet resultSet = statement.executeQuery();
             if (resultSet != null && resultSet.next()) {
                 user = getUserFromResultSet(resultSet);
             }
+            closeStatement();
         } catch (SQLException e) {
-            logger.error(e);
+            throw new DaoException(e);
         }
-        closeStatement();
         return user;
     }
 
     @Override
-    public ArrayList<User> read() {
+    public ArrayList<User> read() throws DaoException {
         ArrayList<User> userList = new ArrayList<User>();
-        setupStatement(READ_ALL_QUERY);
-        try{
+        try {
+            setupStatement(READ_ALL_QUERY);
             ResultSet resultSet = statement.executeQuery();
-            while(resultSet.next()){
+            while (resultSet.next()) {
                 userList.add(getUserFromResultSet(resultSet));
             }
             resultSet.close();
+            closeStatement();
         } catch (SQLException e) {
-            logger.error(e);
+            throw new DaoException(e);
         }
-        closeStatement();
         return userList;
     }
 
     @Override
-    public User update(User entity) {
-        setupStatement(UPDATE_QUERY);
+    public User update(User entity) throws DaoException {
         User user = null;
         try {
+            setupStatement(UPDATE_QUERY);
             statement.setString(1, entity.getFirstName());
             statement.setString(2, entity.getLastName());
             statement.setString(3, entity.getEmail());
             statement.setInt(4, entity.getId());
-            if (statement.executeUpdate() == 1){
+            if (statement.executeUpdate() == 1) {
                 user = read(entity.getId());
             }
+            closeStatement();
         } catch (SQLException e) {
-            logger.error(e);
+            throw new DaoException(e);
         }
-        closeStatement();
         return user;
     }
 
     @Override
-    public boolean delete(int id) {
-        setupStatement(DELETE_QUERY);
-        int affectedRows = 0;
-        try{
+    public boolean delete(int id) throws DaoException {
+        int affectedRows;
+        try {
+            setupStatement(DELETE_QUERY);
             statement.setInt(1, id);
             affectedRows = statement.executeUpdate();
+            closeStatement();
         } catch (SQLException e) {
-            logger.error(e);
+            throw new DaoException(e);
         }
-        closeStatement();
         return affectedRows != 0;
     }
 }
