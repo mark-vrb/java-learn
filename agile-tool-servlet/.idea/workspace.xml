@@ -2,33 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/markvarabyou/services/entities/CollectionResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/markvarabyou/entities/exceptions/DaoException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/markvarabyou/services/exceptions/EntityCreationFailedException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/markvarabyou/services/exceptions/EntityNotFoundException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/markvarabyou/services/exceptions/EntityUpdateFailedException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/markvarabyou/services/exceptions/InternalDaoException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/markvarabyou/services/exceptions/ServiceException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/markvarabyou/servlets/utilities/exceptions/ServiceSetupException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/markvarabyou/services/UsersService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/users.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/users.js" />
-      <change type="MOVED" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool-servlet\src\org\markvarabyou\servlets\utilities\DaoFactory.java" afterPath="$PROJECT_DIR$/src/org/markvarabyou/servlets/utilities/ServiceFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/markvarabyou/entities/interfaces/EntityDao.java" afterPath="$PROJECT_DIR$/src/org/markvarabyou/entities/interfaces/EntityDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/markvarabyou/entities/interfaces/RelationEntityDao.java" afterPath="$PROJECT_DIR$/src/org/markvarabyou/entities/interfaces/RelationEntityDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/markvarabyou/servlets/utilities/ServletUtilities.java" afterPath="$PROJECT_DIR$/src/org/markvarabyou/servlets/utilities/ServletUtilities.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardColumnDao.java" afterPath="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardColumnDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardDao.java" afterPath="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardUserRoleDao.java" afterPath="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardUserRoleDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlDao.java" afterPath="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlUserDao.java" afterPath="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlUserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlWorkItemDao.java" afterPath="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlWorkItemDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/markvarabyou/servlets/UsersServlet.java" afterPath="$PROJECT_DIR$/src/org/markvarabyou/servlets/UsersServlet.java" />
+      <change type="DELETED" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool-servlet\src\main\webapp\css\bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool-servlet\src\main\webapp\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool-servlet\src\main\webapp\fonts\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool-servlet\src\main\webapp\fonts\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool-servlet\src\main\webapp\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool-servlet\src\main\webapp\fonts\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool-servlet\src\main\webapp\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool-servlet\src\main\webapp\js\jq\jquery-1.9.1.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/users.html" afterPath="$PROJECT_DIR$/src/main/webapp/users.html" />
     </list>
     <ignored path="agile-tool-servlet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,7 +19,7 @@
     <file path="/web.xml" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385204063605" ignored="false" />
     <file path="/UsersServlet.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385418500402" ignored="false" />
     <file path="/ServletUtilities.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385203675493" ignored="false" />
-    <file path="/index.html" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385471258129" ignored="false" />
+    <file path="/index.html" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385473640907" ignored="false" />
     <file path="/DaoFactory.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1384761518971" ignored="false" />
     <file path="/pom.xml" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1384778010207" ignored="false" />
     <file path="/AgileToolServlet.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1384808820720" ignored="false" />
@@ -133,7 +116,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="38" selection-start="448" selection-end="448" vertical-scroll-proportion="-5.269231">
+            <state line="6" column="90" selection-start="87" selection-end="361" vertical-scroll-proportion="-3.9230769">
               <folding />
             </state>
           </provider>
@@ -178,7 +161,7 @@
       <file leaf-file-name="users.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/users.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="65" selection-start="1802" selection-end="1802" vertical-scroll-proportion="0.57490635">
+            <state line="76" column="38" selection-start="3211" selection-end="3211" vertical-scroll-proportion="0.49853373">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -908,7 +891,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24469697" sideWeight="0.67064846" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1101,14 +1084,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="38" selection-start="448" selection-end="448" vertical-scroll-proportion="-5.269231">
+        <state line="6" column="90" selection-start="87" selection-end="361" vertical-scroll-proportion="-3.9230769">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/users.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="65" selection-start="1802" selection-end="1802" vertical-scroll-proportion="0.57490635">
+        <state line="76" column="38" selection-start="3211" selection-end="3211" vertical-scroll-proportion="0.49853373">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
