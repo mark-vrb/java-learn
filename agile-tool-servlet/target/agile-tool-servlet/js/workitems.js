@@ -1,12 +1,12 @@
-var onDeleteUserClick = function (id) {
+var onDeleteClick = function (id) {
     var deleteRequest = $.ajax({
-        url: "../api/Boards?id=" + id,
+        url: "../api/WorkItems?id=" + id,
         type: "delete",
         contentType: "application/json"
     });
 
     deleteRequest.done(function () {
-        $('#rowForUser_' + id).remove();
+        $('#row_' + id).remove();
     });
 
     deleteRequest.fail(function (jqXHR, textStatus, errorThrown) {
@@ -14,9 +14,9 @@ var onDeleteUserClick = function (id) {
     });
 };
 
-var updateUsersGrid = function () {
+var updateGrid = function () {
     var getAllRequest = $.ajax({
-        url: "../api/Users",
+        url: "../api/WorkItems",
         type: "get",
         contentType: "application/json"
     });
@@ -25,28 +25,40 @@ var updateUsersGrid = function () {
         var r = [], j = -1, size = response.items.length, i, item;
         for (i = 0; i < size; i++) {
             item = response.items[i];
-            r[++j] = '<tr id=\'rowForUser_' + item.id + '\'><td>';
+            r[++j] = '<tr id=\'row_' + item.id + '\'><td>';
             r[++j] = item.id;
             r[++j] = '</td><td>';
-            r[++j] = item.firstName;
+            r[++j] = item.name;
             r[++j] = '</td><td>';
-            r[++j] = item.lastName;
+            r[++j] = item.description;
             r[++j] = '</td><td>';
-            r[++j] = item.email;
-            r[++j] = "</td><td><button class='btn btn-danger btn-xs' onclick='onDeleteUserClick\(";
+            r[++j] = item.creationDate;
+            r[++j] = '</td><td>';
+            r[++j] = item.createdByUserId;
+            r[++j] = '</td><td>';
+            r[++j] = item.assigneeUserId;
+            r[++j] = '</td><td>';
+            r[++j] = item.size;
+            r[++j] = '</td><td>';
+            r[++j] = item.type;
+            r[++j] = '</td><td>';
+            r[++j] = item.boardId;
+            r[++j] = '</td><td>';
+            r[++j] = item.boardColumnId;
+            r[++j] = "</td><td><button class='btn btn-danger btn-xs' onclick='onDeleteClick\(";
             r[++j] = item.id;
             r[++j] = '\)\'>Delete</button></td></tr>';
         }
-        $('#usersTableBody').html(r.join(''));
+        $('#gridBody').html(r.join(''));
     });
 };
 
 $(function () {
     var request;
 
-    updateUsersGrid();
+    updateGrid();
 
-    $("#userCreateForm").submit(function (event) {
+    $("#createForm").submit(function (event) {
         var $form, $inputs, serializedData, jsonObject;
 
         if (request) {
@@ -64,15 +76,15 @@ $(function () {
         $inputs.prop("disabled", true);
 
         request = $.ajax({
-            url: "../api/Users",
+            url: "../api/WorkItems",
             type: "post",
             contentType: "application/json",
             data: JSON.stringify(jsonObject)
         });
 
         request.done(function () {
-            document.forms["userCreateForm"].reset();
-            updateUsersGrid();
+            document.forms["createForm"].reset();
+            updateGrid();
         });
 
         request.fail(function (jqXHR, textStatus, errorThrown) {

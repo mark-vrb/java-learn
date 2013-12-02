@@ -10,6 +10,7 @@ import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Calendar;
 
 /**
  * Sql-based Data Access Object for WorkItem.
@@ -53,7 +54,7 @@ public class SqlWorkItemDao extends SqlDao implements EntityDao<WorkItem> {
             statement.setString(1, entity.getName());
             statement.setString(2, entity.getDescription());
             statement.setInt(3, entity.getCreatedByUserId());
-            statement.setDate(4, new Date(entity.getCreationDate().getTime()));
+            statement.setDate(4, new Date(Calendar.getInstance().getTimeInMillis()));
             statement.setInt(5, entity.getAssigneeUserId());
             statement.setByte(6, entity.getSize());
             statement.setInt(7, entity.getType().ordinal());
