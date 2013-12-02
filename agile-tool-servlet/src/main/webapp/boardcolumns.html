@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Users</title>
+    <title>Board Columns</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./js/users.js"></script>
+    <script type="text/javascript" src="./js/boardcolumns.js"></script>
 </head>
 <body>
 <header class="navbar navbar-default navbar-static-top" role="navigation">
@@ -21,9 +21,9 @@
     <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav">
             <li><a href="./index.html">Home</a></li>
-            <li class="active"><a href="./users.html">Users</a></li>
+            <li><a href="./users.html">Users</a></li>
             <li><a href="./boards.html">Boards</a></li>
-            <li><a href="./boardcolumns.html">Board Columns</a></li>
+            <li class="active"><a href="./boardcolumns.html">Board Columns</a></li>
             <li><a href="./workitems.html">WorkItems</a></li>
         </ul>
     </div>
@@ -35,25 +35,26 @@
              style="cursor: pointer">
             <h4 class="panel-title">
                 <span class="glyphicon glyphicon-plus"></span>
-                <span> Create User</span>
+                <span> Create Board Column</span>
             </h4>
         </div>
         <div id="collapseCreate" class="panel-collapse collapse">
             <div class="panel-body">
-                <form id="userCreateForm" role="form">
+                <form id="createForm" role="form">
                     <div class="form-group">
-                        <label for="firstName">First Name:</label>
-                        <input id="firstName" class="form-control" name="firstName" type="text" value=""
-                               placeholder="First Name"/>
+                        <label for="name">Name:</label>
+                        <input id="name" class="form-control" name="name" type="text" value=""
+                               placeholder="Name"/>
                     </div>
                     <div class="form-group">
-                        <label for="lastName">Last Name:</label>
-                        <input id="lastName" class="form-control" name="lastName" type="text" value=""
-                               placeholder="Last Name"/>
+                        <label for="boardId">Board Id:</label>
+                        <input id="boardId" class="form-control" name="boardId" type="text" value=""
+                               placeholder="Parent board id"/>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input id="email" class="form-control" name="email" type="email" value="" placeholder="Email"/>
+                        <label for="type">Type:</label>
+                        <input id="type" class="form-control" name="type" type="text" value=""
+                               placeholder="Type"/>
                     </div>
                     <button type="submit" class="btn btn-default">Submit</button>
                 </form>
@@ -65,7 +66,7 @@
         <div class="panel-heading">
             <h4 class="panel-title">
                 <span class="glyphicon glyphicon-th-list"></span>
-                <span> Users List</span>
+                <span> Board Columns List</span>
             </h4>
         </div>
 
@@ -73,13 +74,13 @@
             <thead>
             <tr>
                 <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
+                <th>Name</th>
+                <th>Board #</th>
+                <th>Type</th>
                 <th>Actions</th>
             </tr>
             </thead>
-            <tbody id="usersTableBody">
+            <tbody id="gridBody">
             </tbody>
         </table>
     </div>

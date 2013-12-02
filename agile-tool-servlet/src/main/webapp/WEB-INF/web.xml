@@ -14,4 +14,34 @@
         <servlet-name>Users</servlet-name>
         <url-pattern>/api/Users</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>Boards</servlet-name>
+        <display-name>Boards</display-name>
+        <description>Boards web interface</description>
+        <servlet-class>org.markvarabyou.servlets.BoardsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Boards</servlet-name>
+        <url-pattern>/api/Boards</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>BoardColumns</servlet-name>
+        <display-name>BoardColumns</display-name>
+        <description>BoardColumns web interface</description>
+        <servlet-class>org.markvarabyou.servlets.BoardColumnsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BoardColumns</servlet-name>
+        <url-pattern>/api/BoardColumns</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>WorkItems</servlet-name>
+        <display-name>WorkItems</display-name>
+        <description>WorkItems web interface</description>
+        <servlet-class>org.markvarabyou.servlets.WorkItemsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WorkItems</servlet-name>
+        <url-pattern>/api/WorkItems</url-pattern>
+    </servlet-mapping>
 </web-app>

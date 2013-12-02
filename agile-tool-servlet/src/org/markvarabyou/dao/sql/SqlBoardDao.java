@@ -9,6 +9,7 @@ import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Calendar;
 
 /**
  * SQL Data Access Object for Board entity.
@@ -43,7 +44,7 @@ public class SqlBoardDao extends SqlDao implements EntityDao<Board> {
             setupStatement(CREATE_QUERY);
             statement.setString(1, entity.getName());
             statement.setInt(2, entity.getCreatedByUserId());
-            statement.setDate(3, new Date(entity.getCreationDate().getTime()));
+            statement.setDate(3, new Date(Calendar.getInstance().getTimeInMillis()));
             statement.executeUpdate();
             ResultSet resultSet = statement.getGeneratedKeys();
             int key;
