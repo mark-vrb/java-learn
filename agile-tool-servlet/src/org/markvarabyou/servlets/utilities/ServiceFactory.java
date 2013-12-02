@@ -1,7 +1,10 @@
 package org.markvarabyou.servlets.utilities;
 
 import org.markvarabyou.dao.sql.*;
+import org.markvarabyou.services.BoardColumnsService;
+import org.markvarabyou.services.BoardsService;
 import org.markvarabyou.services.UsersService;
+import org.markvarabyou.services.WorkItemsService;
 import org.markvarabyou.servlets.utilities.exceptions.ServiceSetupException;
 
 import java.sql.Connection;
@@ -32,6 +35,44 @@ public class ServiceFactory {
         } catch (SQLException e) {
             throw new ServiceSetupException();
         }
+    }
 
+    public BoardsService getBoardsService() throws ServiceSetupException {
+        try {
+            Class.forName(JDBC_DRIVER);
+            Connection connection = DriverManager.getConnection(DB_URL, USER, PASS);
+            SqlBoardDao sqlBoardDao = new SqlBoardDao(connection);
+            return new BoardsService(sqlBoardDao);
+        } catch (ClassNotFoundException e) {
+            throw new ServiceSetupException();
+        } catch (SQLException e) {
+            throw new ServiceSetupException();
+        }
+    }
+
+    public BoardColumnsService getBoardColumnsService() throws ServiceSetupException {
+        try {
+            Class.forName(JDBC_DRIVER);
+            Connection connection = DriverManager.getConnection(DB_URL, USER, PASS);
+            SqlBoardColumnDao sqlBoardColumnDao = new SqlBoardColumnDao(connection);
+            return new BoardColumnsService(sqlBoardColumnDao);
+        } catch (ClassNotFoundException e) {
+            throw new ServiceSetupException();
+        } catch (SQLException e) {
+            throw new ServiceSetupException();
+        }
+    }
+
+    public WorkItemsService getWorkItemsService() throws ServiceSetupException {
+        try {
+            Class.forName(JDBC_DRIVER);
+            Connection connection = DriverManager.getConnection(DB_URL, USER, PASS);
+            SqlWorkItemDao sqlWorkItemDao = new SqlWorkItemDao(connection);
+            return new WorkItemsService(sqlWorkItemDao);
+        } catch (ClassNotFoundException e) {
+            throw new ServiceSetupException();
+        } catch (SQLException e) {
+            throw new ServiceSetupException();
+        }
     }
 }

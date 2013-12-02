@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool-servlet\src\main\webapp\css\bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool-servlet\src\main\webapp\css\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool-servlet\src\main\webapp\fonts\glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool-servlet\src\main\webapp\fonts\glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool-servlet\src\main\webapp\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool-servlet\src\main\webapp\fonts\glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool-servlet\src\main\webapp\js\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Mark\Documents\java-learn\agile-tool-servlet\src\main\webapp\js\jq\jquery-1.9.1.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/users.html" afterPath="$PROJECT_DIR$/src/main/webapp/users.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/markvarabyou/services/BoardColumnsService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/markvarabyou/servlets/BoardColumnsServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/markvarabyou/services/BoardsService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/markvarabyou/servlets/BoardsServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/markvarabyou/services/WorkItemsService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/markvarabyou/servlets/WorkItemsServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/markvarabyou/servlets/utilities/ServiceFactory.java" afterPath="$PROJECT_DIR$/src/org/markvarabyou/servlets/utilities/ServiceFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="agile-tool-servlet.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385462325684" ignored="false" />
+    <file path="/Dummy.txt" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385984285978" ignored="false" />
     <file path="/web.xml" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385204063605" ignored="false" />
     <file path="/UsersServlet.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385418500402" ignored="false" />
     <file path="/ServletUtilities.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385203675493" ignored="false" />
@@ -28,9 +26,9 @@
     <file path="/EntityCreationFailedException.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385199989786" ignored="false" />
     <file path="/EntityUpdateFailedException.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385200154220" ignored="false" />
     <file path="/CollectionResult.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385033068697" ignored="false" />
-    <file path="/ServiceFactory.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385201633567" ignored="false" />
+    <file path="/ServiceFactory.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385986553477" ignored="false" />
     <file path="/AgileToolServletUtilities.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385034500089" ignored="false" />
-    <file path="/fragment.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385034418806" ignored="false" />
+    <file path="/fragment.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385985952241" ignored="false" />
     <file path="/SqlUserDao.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385197628474" ignored="false" />
     <file path="/DaoException.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385197178311" ignored="false" />
     <file path="/InternalDaoException.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385200087692" ignored="false" />
@@ -44,6 +42,12 @@
     <file path="/dummy.xml" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385467044470" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385471327218" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/webapp/css/bootstrap-theme.min.css" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385471327218" ignored="false" />
+    <file path="/BoardsService.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385745114659" ignored="false" />
+    <file path="/BoardsServlets.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385910293853" ignored="false" />
+    <file path="/WorkItemsService.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385986334476" ignored="false" />
+    <file path="/BoardColumnsService.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385986127807" ignored="false" />
+    <file path="/BoardColumnsServlet.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385986422066" ignored="false" />
+    <file path="/WorkItemsServlet.java" changelist="fd6e2fa5-87af-40f6-a3c2-c13ce67fea14" time="1385986738066" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,46 +108,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ServletUtilities.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/servlets/utilities/ServletUtilities.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="90" selection-start="87" selection-end="361" vertical-scroll-proportion="-3.9230769">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="28" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UsersServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/servlets/UsersServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="32" selection-start="2012" selection-end="2012" vertical-scroll-proportion="0.0">
+            <state line="87" column="42" selection-start="701" selection-end="3512" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoardColumnsServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/servlets/BoardColumnsServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="93" column="31" selection-start="810" selection-end="3655" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WorkItemsServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/servlets/WorkItemsServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="53" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoardColumnsService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/services/BoardColumnsService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="16" selection-start="693" selection-end="693" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1735#1748#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/servlets/utilities/ServiceFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="41" selection-start="2126" selection-end="2126" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,27 +161,28 @@
       <file leaf-file-name="UsersService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/services/UsersService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="29" selection-start="2121" selection-end="2121" vertical-scroll-proportion="0.0">
+            <state line="78" column="40" selection-start="2585" selection-end="2585" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/users.html">
+      <file leaf-file-name="WorkItemsService.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/services/WorkItemsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="38" selection-start="3211" selection-end="3211" vertical-scroll-proportion="0.49853373">
+            <state line="16" column="47" selection-start="653" selection-end="653" vertical-scroll-proportion="0.19778189">
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1672#1682#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/users.js">
+      <file leaf-file-name="BoardsService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/services/BoardsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="65" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0">
+            <state line="20" column="13" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -196,14 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/org/markvarabyou/services/exceptions/EntityNotFoundException.java" />
-        <option value="$PROJECT_DIR$/src/org/markvarabyou/services/exceptions/EntityCreationFailedException.java" />
-        <option value="$PROJECT_DIR$/src/org/markvarabyou/services/exceptions/InternalDaoException.java" />
-        <option value="$PROJECT_DIR$/src/org/markvarabyou/servlets/utilities/exceptions/ServiceSetupException.java" />
-        <option value="$PROJECT_DIR$/src/org/markvarabyou/servlets/utilities/ServiceFactory.java" />
-        <option value="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardColumnDao.java" />
-        <option value="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlDao.java" />
-        <option value="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlWorkItemDao.java" />
         <option value="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardUserRoleDao.java" />
         <option value="$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardDao.java" />
         <option value="$PROJECT_DIR$/src/org/markvarabyou/servlets/utilities/ServletUtilities.java" />
@@ -212,6 +214,14 @@
         <option value="$PROJECT_DIR$/src/main/webapp/js/users.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/users.html" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/servlets/BoardsServlets.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/servlets/BoardsServlet.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/services/BoardColumnsService.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/services/BoardsService.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/services/WorkItemsService.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/servlets/utilities/ServiceFactory.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/servlets/BoardColumnsServlet.java" />
+        <option value="$PROJECT_DIR$/src/org/markvarabyou/servlets/WorkItemsServlet.java" />
       </list>
     </option>
   </component>
@@ -289,6 +299,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -357,36 +368,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="agile-tool-servlet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="agile-tool-servlet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="markvarabyou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exceptions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -624,7 +605,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -871,30 +851,30 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39761093" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39761093" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39761093" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32329988" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.67064846" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.67064846" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24469697" sideWeight="0.67064846" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2439394" sideWeight="0.66211605" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33788395" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32329988" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -965,107 +945,46 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/servlets/utilities/exceptions/ServiceSetupException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="32" selection-start="218" selection-end="218" vertical-scroll-proportion="0.41463414">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/servlets/utilities/ServiceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="30" selection-start="697" selection-end="697" vertical-scroll-proportion="0.60162604">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlWorkItemDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="34" selection-start="5085" selection-end="5085" vertical-scroll-proportion="-0.096045196">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="18" selection-start="1482" selection-end="1482" vertical-scroll-proportion="-0.096045196">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="260" selection-end="260" vertical-scroll-proportion="-0.096045196">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardUserRoleDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="24" selection-start="4243" selection-end="4243" vertical-scroll-proportion="0.03003003">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="24" selection-start="4005" selection-end="4005" vertical-scroll-proportion="0.08108108">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/dao/sql/SqlBoardColumnDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="10" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.96997">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="28" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/services/UsersService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="29" selection-start="2121" selection-end="2121" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-core/2.0-beta9/log4j-core-2.0-beta9.jar!/org/apache/logging/log4j/core/web/Log4jServletFilter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="16" selection-start="626" selection-end="626" vertical-scroll-proportion="0.55709344" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/servlets/UsersServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="32" selection-start="2012" selection-end="2012" vertical-scroll-proportion="0.0">
+        <state line="6" column="89" selection-start="87" selection-end="361" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/users.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="20" selection-start="3232" selection-end="3232" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="19" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="23" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/servlets/utilities/ServletUtilities.java">
@@ -1075,25 +994,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/users.js">
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/servlets/BoardsServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="65" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0">
+        <state line="9" column="18" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/entities/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="90" selection-start="87" selection-end="361" vertical-scroll-proportion="-3.9230769">
+        <state line="13" column="24" selection-start="254" selection-end="254" vertical-scroll-proportion="0.03024911">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/users.html">
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/servlets/UsersServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="38" selection-start="3211" selection-end="3211" vertical-scroll-proportion="0.49853373">
+        <state line="87" column="42" selection-start="701" selection-end="3512" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/servlets/utilities/ServiceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="41" selection-start="2126" selection-end="2126" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/servlets/BoardColumnsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="31" selection-start="810" selection-end="3655" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/servlets/WorkItemsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="53" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/services/BoardColumnsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="16" selection-start="693" selection-end="693" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1735#1748#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/services/BoardsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="13" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/services/UsersService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="40" selection-start="2585" selection-end="2585" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/markvarabyou/services/WorkItemsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="47" selection-start="653" selection-end="653" vertical-scroll-proportion="0.19778189">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1672#1682#0" expanded="true" />
           </folding>
         </state>
       </provider>
