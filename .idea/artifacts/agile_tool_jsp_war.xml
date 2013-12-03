@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="agile-tool-jsp:war">
+    <output-path>$PROJECT_DIR$/agile-tool-jsp/target</output-path>
+    <root id="archive" name="agile-tool-jsp.war">
+      <element id="artifact" artifact-name="agile-tool-jsp:war exploded" />
+    </root>
+  </artifact>
+</component>
