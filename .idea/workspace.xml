@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c592f335-f0c5-4cae-9b43-12e80b51d2d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_0_beta9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_0_beta9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/agile-tool-jsp/src/org/markvarabyou/services/transfer/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/agile-tool-jsp/src/org/markvarabyou/services/UserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/agile_tool_jsp_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/agile_tool_jsp_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/agile-tool-jsp/src/main/webapp/WEB-INF/tags/userslistitem.tag" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/agile-tool-servlet/.idea/workspace.xml" afterPath="$PROJECT_DIR$/agile-tool-servlet/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="c592f335-f0c5-4cae-9b43-12e80b51d2d2" name="Default" comment="" />
     <ignored path="agile-tool-jsp.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="c592f335-f0c5-4cae-9b43-12e80b51d2d2" time="1386068409973" ignored="false" />
@@ -105,7 +93,7 @@
       <file leaf-file-name="userslist.tag" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/agile-tool-jsp/src/main/webapp/WEB-INF/tags/userslist.tag">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="23" selection-start="601" selection-end="601" vertical-scroll-proportion="0.76">
+            <state line="15" column="37" selection-start="418" selection-end="418" vertical-scroll-proportion="0.30666667">
               <folding />
             </state>
           </provider>
@@ -632,14 +620,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3993174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -790,7 +778,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/agile-tool-jsp/src/main/webapp/WEB-INF/tags/userslist.tag">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="23" selection-start="601" selection-end="601" vertical-scroll-proportion="0.76">
+        <state line="15" column="37" selection-start="418" selection-end="418" vertical-scroll-proportion="0.30666667">
           <folding />
         </state>
       </provider>

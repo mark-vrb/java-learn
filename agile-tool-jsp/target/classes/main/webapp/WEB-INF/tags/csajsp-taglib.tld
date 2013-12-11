@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib
+        PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+        "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+<!-- a tag library descriptor -->
+
+<taglib>
+    <!-- after this the default space is
+       "http://java.sun.com/j2ee/dtds/jsptaglibrary_1_2.dtd"
+     -->
+
+    <tlib-version>1.0</tlib-version>
+    <jspversion>1.1</jspversion>
+    <short-name>csajsp</short-name>
+    <urn></urn>
+    <info>
+        A tag library from Core Servlets and JavaServer Pages,
+        http://www.coreservlets.com/.
+    </info>
+
+    <!-- Other tags defined earlier... -->
+
+    <tag>
+        <name>if</name>
+        <tag-class>org.markvarabyou.coreservlets.tags.IfTag</tag-class>
+        <info>if/condition/then/else tag.</info>
+        <bodycontent>JSP</bodycontent>
+    </tag>
+
+    <tag>
+        <name>condition</name>
+        <tag-class>org.markvarabyou.coreservlets.tags.IfConditionTag</tag-class>
+        <info>condition part of if/condition/then/else tag.</info>
+        <bodycontent>JSP</bodycontent>
+    </tag>
+    <tag>
+        <name>then</name>
+        <tag-class>org.markvarabyou.coreservlets.tags.IfThenTag</tag-class>
+        <info>then part of if/condition/then/else tag.</info>
+        <bodycontent>JSP</bodycontent>
+    </tag>
+
+    <tag>
+        <name>else</name>
+        <tag-class>org.markvarabyou.coreservlets.tags.IfElseTag</tag-class>
+        <info>else part of if/condition/then/else tag.</info>
+        <bodycontent>JSP</bodycontent>
+    </tag>
+
+</taglib>

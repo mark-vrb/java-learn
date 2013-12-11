@@ -1,11 +1,8 @@
 <%@ tag isELIgnored="false" %>
-<%@attribute name="firstName" required="true"  %>
-<%@attribute name="lastName" required="true"  %>
-<%@attribute name="email" required="true"  %>
-<%@attribute name="userId" required="true"  %>
+<%@attribute name="user" type="org.markvarabyou.services.transfer.User" required="true"%>
 <tr>
-    <td>${userId}</td>
-    <td>${firstName}</td>
-    <td>${lastName}</td>
-    <td>${email}</td>
+    <td>${user.id}</td>
+    <td>${user.firstName}</td>
+    <td>${user.lastName}</td>
+    <td>${user.email}</td>
 </tr>

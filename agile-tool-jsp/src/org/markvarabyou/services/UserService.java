@@ -41,10 +41,11 @@ public class UserService {
             ArrayList<User> result = new ArrayList<User>();
             for (org.markvarabyou.entities.User u : sqlUserDao.read()) {
                 User user = new User();
-                user.firstName = u.getFirstName();
-                user.lastName = u.getLastName();
-                user.email = u.getEmail();
-                user.id = u.getId();
+                user.setFirstName(u.getFirstName());
+                user.setLastName(u.getLastName());
+                user.setEmail(u.getEmail());
+                user.setId(u.getId());
+                result.add(user);
             }
             return result;
         } catch (DaoException e) {
