@@ -31,3 +31,11 @@ Unit tests with [JUnit4](http://junit.org/) for DAO layer of agile-tool app, err
 7. Build tools
 --------------
 Maven settings file `pom.xml` for agile-tool project created and configured.
+
+8. Java Servlets
+----------------
+REST API implemented on Java Servlets. Placed in project `agile-tool-servlet`. Web interface for REST API in simple Html pages with Javascript.
+
+9. JSP
+------
+Sample JSP application with custom tags in layout and Java code. Project `agile-tool-jsp`.
