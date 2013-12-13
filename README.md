@@ -1,6 +1,6 @@
 Welcome to java-learn
 =====================
-My Java language university learning. Builded with [IntelliJ IDEA](http://www.jetbrains.com/idea/).
+My Java language university learning. Builded with [IntelliJ IDEA](http://www.jetbrains.com/idea/). Database dump for agile-tool projects made by [MySQL Workbench](http://www.mysql.com/products/workbench/) is placed in `db-dump` folder.
 
 1. Hello world
 --------------
