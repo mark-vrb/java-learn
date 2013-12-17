@@ -2,7 +2,7 @@ package threading.core;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import threading.core.enums.ClientStatus;
+import threading.core.enums.ThreadStatus;
 
 import java.util.Random;
 
@@ -13,11 +13,15 @@ import java.util.Random;
 public class Client extends Person implements Runnable {
     private static final Logger logger = LogManager.getLogger("Client");
     private int pocket = 0;
-    private ClientStatus status = ClientStatus.Running;
+    private ThreadStatus status = ThreadStatus.Running;
 
     public Client(int id, String name, Bank bank, int amountInPocket) {
         super(id, name, bank);
         this.pocket = amountInPocket;
+    }
+
+    public int checkPocket() {
+        return pocket;
     }
 
     private Account getRandomAccount() {
@@ -74,6 +78,7 @@ public class Client extends Person implements Runnable {
                 }
                 logger.debug(String.format("Client #%d decided to put %d dollars from pocket to account #%d",
                         getId(), amountToOperate, account.getId()));
+                pocket -= amountToOperate;
                 cashier.putAmount(amountToOperate, account);
                 logger.debug(String.format("Client #%d successfully put %d dollars from pocket to account #%d",
                         getId(), amountToOperate, account.getId()));
@@ -111,7 +116,7 @@ public class Client extends Person implements Runnable {
     @Override
     public void run() {
         logger.debug(String.format("Client #%d with name = %s is running", getId(), getName()));
-        while (status == ClientStatus.Running) {
+        while (status == ThreadStatus.Running) {
             try {
                 logger.debug(String.format("Client #%d is waiting for Cashier", getId()));
                 Cashier cashier = bank.getCashier();
@@ -127,14 +132,14 @@ public class Client extends Person implements Runnable {
                 e.printStackTrace();
             }
         }
-        status = ClientStatus.Stopped;
+        status = ThreadStatus.Stopped;
     }
 
     public void interrupt() {
-        status = ClientStatus.Interrupting;
+        status = ThreadStatus.Interrupting;
     }
 
     public boolean isStopped() {
-        return status == ClientStatus.Stopped;
+        return status == ThreadStatus.Stopped;
     }
 }

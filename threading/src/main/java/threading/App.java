@@ -2,6 +2,8 @@ package threading;
 
 import threading.core.Bank;
 
+import java.util.Random;
+
 /**
  * Bank test application. Just keep Bank running for 5 seconds.
  */
@@ -9,40 +11,32 @@ public class App {
     public static void main(String[] args) {
         Bank bank = new Bank();
 
-        bank.addAccount(1, 1000);
-        bank.addAccount(2, 3400);
-        bank.addAccount(3, 50000);
-        bank.addAccount(4, 6000);
-        bank.addAccount(5, 78000);
-        bank.addAccount(6, 300);
-        bank.addAccount(7, 23000);
-        bank.addAccount(8, 390000);
-
-        bank.addClient(1, "Jacob", 2000);
-        bank.addClient(2, "Ava", 4000);
-        bank.addClient(3, "Michael", 1000);
-        bank.addClient(4, "Liam", 5000);
-        bank.addClient(5, "Abigail", 35000);
-
-        bank.addCashier(1, "Sophia");
-        bank.addCashier(2, "Emily");
-        bank.addCashier(3, "Mia");
-
-        bank.start();
-
-        System.out.println("Started!");
-
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        Random random = new Random();
+        for (int i = 0; i < 1000; i++) {
+            bank.addAccount(i, random.nextInt(200000));
         }
 
-        System.out.println("5 seconds is gone!");
+        String[] names = new String[]{"Oliver Flynn","Horton Britt","Malinda Sloan","Riley Mueller","Rosario Mckay",
+                "Coleen Nunez","Ingram Maldonado","Leann Hansen","Fowler Rosario","Morse Martin","Melendez Golden",
+                "Newman Mason","Hazel Aguilar","Benson Jackson","Olga Thornton","Nina Key","Joni Simon",
+                "Taylor Hopkins","Matilda Wilder","Phillips Macias","Colon Albert","Eula Raymond","Mcintyre Boyd",
+                "Rogers Jacobson","Farmer Crane","Karen Mullins","Joy Mckenzie","Nixon George","Susanna Tate",
+                "Sweet Tyson","Sheena Logan","Aline Lucas","Wynn Hernandez","Mccray Hewitt","Simmons Aguirre",
+                "Lancaster Tran","Jannie Johnston","Deena Stone","Owen Coleman","Maureen Munoz","Rosalie Santiago",
+                "Minerva Rich","Shannon Lyons","Madeleine Russell","Foreman Sanford","Dean Snyder","Alejandra Hooper",
+                "Boone Phillips","Paula Rodgers","Kristin Pittman"};
 
-        bank.stop();
+        for (int i = 0; i < 50; i++) {
+            bank.addClient(i, names[i], random.nextInt(5000));
+        }
 
-        System.out.println("Stopped!");
-        System.out.println("Bye!");
+        String[] cashiersNames = new String[]{"Dena Glenn","Nicholson Hanson","Osborn Watts","Mcbride Russell",
+                "Shari Hudson","Kirk Cardenas","Sophia Hull","Monroe Craig","Tami Hickman","Minerva Simmons"};
+
+        for (int i = 0; i < 10; i++) {
+            bank.addCashier(i, cashiersNames[i]);
+        }
+
+        bank.start();
     }
 }

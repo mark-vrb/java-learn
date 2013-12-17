@@ -9,21 +9,21 @@ public class Cashier extends Person {
         super(id, name, bank);
     }
 
-    public synchronized int checkAmount(Account account) {
+    public int checkAmount(Account account) {
         return account.check();
     }
 
-    public synchronized int takeAmount(int amount, Account account) {
+    public int takeAmount(int amount, Account account) {
         if (account.tryWithdraw(amount))
             return amount;
         return 0;
     }
 
-    public synchronized void putAmount(int amount, Account account) {
+    public void putAmount(int amount, Account account) {
         account.deposit(amount);
     }
 
-    public synchronized boolean transferAmount(int amount, Account source, Account destination) {
+    public boolean transferAmount(int amount, Account source, Account destination) {
         if (source.tryWithdraw(amount)) {
             destination.deposit(amount);
             return true;

@@ -14,6 +14,10 @@ public class Account {
         this.amount = initialAmount;
     }
 
+    public int getId() {
+        return id;
+    }
+
     public synchronized int check() {
         return amount;
     }
@@ -27,9 +31,5 @@ public class Account {
 
     public synchronized void deposit(int amount) {
         this.amount += amount;
-    }
-
-    public int getId() {
-        return id;
     }
 }

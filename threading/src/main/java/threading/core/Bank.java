@@ -12,6 +12,7 @@ public class Bank {
     private ArrayList<Account> accounts;
 
     private int cashAmount;
+    private Watcher watcher;
 
     private CashierPool cashierPool;
 
@@ -20,6 +21,11 @@ public class Bank {
         cashiers = new ArrayList<Cashier>();
         accounts = new ArrayList<Account>();
         cashierPool = new CashierPool(cashiers);
+        watcher = new Watcher(this, 1000);
+    }
+
+    public int getCashAmount() {
+        return cashAmount;
     }
 
     public void addClient(int id, String name, int amountInPocket) {
@@ -60,9 +66,14 @@ public class Bank {
             thread = new Thread(client);
             thread.start();
         }
+        thread = new Thread(watcher);
+        thread.start();
     }
 
     public void stop() {
+        watcher.interrupt();
+        while (!watcher.isStopped()) {
+        }
         for (Client client : clients) {
             client.interrupt();
         }
@@ -73,5 +84,13 @@ public class Bank {
                 allStopped = allStopped && client.isStopped();
             }
         }
+    }
+
+    protected ArrayList<Account> getAccounts() {
+        return accounts;
+    }
+
+    protected ArrayList<Client> getClients() {
+        return clients;
     }
 }
