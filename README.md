@@ -18,7 +18,7 @@ Class for performing math operations with matrices, such as multiplying. There a
 
 4. Threading
 ------------
-> **NOTE:** To be implemented 
+Queuing system, representing Bank with Accounts, Cashiers and Clients. Clients working in own threads and each has a Pocket. There is another thread for Watcher, which tracking amounts of money on Accounts and in Pockets and checking that summ of amounts is not changed. Placed in folder `threading`.
 
 5. Jdbc
 -------
