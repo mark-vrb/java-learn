@@ -64,21 +64,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="App.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/threading/App.java">
+      <file leaf-file-name="Client.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="21" selection-start="1828" selection-end="1828" vertical-scroll-proportion="1.1237289" vertical-offset="0" max-vertical-offset="816">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="158" column="41" selection-start="7098" selection-end="7098" vertical-scroll-proportion="0.0" vertical-offset="2524" max-vertical-offset="2975">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckStatus.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/enums/CheckStatus.java">
+      <file leaf-file-name="ThreadStatus.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/enums/ThreadStatus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="7" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="255">
+            <state line="4" column="20" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j2.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/log4j2.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="48" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="391">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/threading/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="68" selection-start="429" selection-end="429" vertical-scroll-proportion="0.5137255" vertical-offset="56" max-vertical-offset="1054">
               <folding />
             </state>
           </provider>
@@ -87,36 +103,16 @@
       <file leaf-file-name="Watcher.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Watcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="38" selection-start="1798" selection-end="1798" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ThreadStatus.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/enums/ThreadStatus.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="24" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="289">
+            <state line="46" column="51" selection-start="1525" selection-end="1525" vertical-scroll-proportion="0.0" vertical-offset="141" max-vertical-offset="1258">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CashierPool.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/CashierPool.java">
+      <file leaf-file-name="Pocket.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Pocket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="27" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="561">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Account.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Account.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="663">
+            <state line="5" column="30" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
               <folding />
             </state>
           </provider>
@@ -125,8 +121,30 @@
       <file leaf-file-name="Cashier.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Cashier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="10" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="663">
+            <state line="38" column="43" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CashierPool.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/CashierPool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="38" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bank.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Bank.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="23" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="1734">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2590#2591#0" expanded="true" />
+                <element signature="e#2619#2620#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,30 +154,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="23" column="7" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="697">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Person.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Person.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="40" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="459">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bank.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Bank.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="39" selection-start="1972" selection-end="1972" vertical-scroll-proportion="0.0" vertical-offset="1292" max-vertical-offset="1734">
-              <folding>
-                <element signature="method#getCashAmount#0;class#Bank#0" expanded="true" />
-                <element signature="e#2297#2298#0" expanded="true" />
-                <element signature="e#2328#2329#0" expanded="true" />
-                <element signature="e#2376#2377#0" expanded="true" />
-                <element signature="e#2406#2407#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -184,17 +178,20 @@
         <option value="$PROJECT_DIR$/src/main/java/threading/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/threading/core/enums/Bank.java" />
         <option value="$PROJECT_DIR$/src/main/java/threading/Bank.java" />
-        <option value="$PROJECT_DIR$/resources/log4j2.xml" />
         <option value="$PROJECT_DIR$/src/main/java/threading/core/enums/ClientStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/threading/core/enums/ThreadState.java" />
         <option value="$PROJECT_DIR$/src/main/java/threading/core/enums/ThreadStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/threading/core/enums/WatcherState.java" />
-        <option value="$PROJECT_DIR$/src/main/java/threading/core/Cashier.java" />
-        <option value="$PROJECT_DIR$/src/main/java/threading/core/Watcher.java" />
         <option value="$PROJECT_DIR$/src/main/java/threading/core/enums/CheckStatus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/threading/core/Bank.java" />
+        <option value="$PROJECT_DIR$/resources/log4j2.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/threading/core/Transaction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/threading/core/BankDataStore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/threading/core/Cashier.java" />
         <option value="$PROJECT_DIR$/src/main/java/threading/core/Account.java" />
+        <option value="$PROJECT_DIR$/src/main/java/threading/core/Pocket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/threading/core/Watcher.java" />
         <option value="$PROJECT_DIR$/src/main/java/threading/core/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/threading/core/Bank.java" />
         <option value="$PROJECT_DIR$/src/main/java/threading/App.java" />
       </list>
     </option>
@@ -238,7 +235,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -364,6 +360,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -384,10 +381,14 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Mark\Documents\java-learn\threading\resources" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="threading.core" />
     </key>
   </component>
   <component name="RunManager" selected="Application.App">
@@ -650,26 +651,31 @@
       <created>1387207476720</created>
       <updated>1387207476720</updated>
       <workItem from="1387207483778" duration="20431000" />
-      <workItem from="1387267395080" duration="11636000" />
+      <workItem from="1387267395080" duration="11745000" />
+      <workItem from="1387279971420" duration="4320000" />
+      <workItem from="1387400827660" duration="35000" />
+      <workItem from="1387818360709" duration="1371000" />
+      <workItem from="1387961901941" duration="6359000" />
+      <workItem from="1387998981614" duration="13033000" />
+      <workItem from="1388047819868" duration="3263000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32067000" />
+    <option name="totallyTimeSpent" value="60557000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8430141" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5259027" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -682,10 +688,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.83045524" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5259027" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -710,21 +717,215 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/threading/App.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="44" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="918">
+        <state line="12" column="24" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Bank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="5" selection-start="2248" selection-end="2248" vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="1734">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2590#2591#0" expanded="true" />
+            <element signature="e#2619#2620#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="20" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Cashier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="40" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="7" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="40" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Bank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="55" selection-start="2080" selection-end="2080" vertical-scroll-proportion="0.0" vertical-offset="1360" max-vertical-offset="1938">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2590#2591#0" expanded="true" />
+            <element signature="e#2619#2620#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="39" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="2482">
+        <state line="23" column="35" selection-start="758" selection-end="758" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2924">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Watcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="32" selection-start="818" selection-end="818" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1241">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="75" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/enums/ThreadStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="20" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/CashierPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="31" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="20" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Cashier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="40" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="7" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="40" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Bank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="55" selection-start="2080" selection-end="2080" vertical-scroll-proportion="0.0" vertical-offset="1360" max-vertical-offset="1938">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2590#2591#0" expanded="true" />
+            <element signature="e#2619#2620#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="45" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Watcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="38" selection-start="1798" selection-end="1798" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="1139">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/enums/ThreadStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="24" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/CashierPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="27" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Cashier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="10" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="7" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="40" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Bank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="39" selection-start="1972" selection-end="1972" vertical-scroll-proportion="0.0" vertical-offset="1292" max-vertical-offset="1734">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2590#2591#0" expanded="true" />
+            <element signature="e#2619#2620#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="44" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="39" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="2482">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -774,11 +975,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" vertical-offset="239" max-vertical-offset="1411">
           <folding>
-            <element signature="method#getCashAmount#0;class#Bank#0" expanded="true" />
-            <element signature="e#2297#2298#0" expanded="true" />
-            <element signature="e#2328#2329#0" expanded="true" />
-            <element signature="e#2376#2377#0" expanded="true" />
-            <element signature="e#2406#2407#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2590#2591#0" expanded="true" />
+            <element signature="e#2619#2620#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -790,23 +989,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="747" column="62" selection-start="27735" selection-end="27735" vertical-scroll-proportion="1.1292962" vertical-offset="11380" max-vertical-offset="34238">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="28" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/enums/ThreadStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="24" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <folding />
-        </state>
+        <state line="747" column="62" selection-start="27735" selection-end="27735" vertical-scroll-proportion="1.1292962" vertical-offset="11380" max-vertical-offset="34238" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -816,78 +999,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Person.java">
+    <entry file="file://$PROJECT_DIR$/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="40" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="527">
+        <state line="1" column="48" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/enums/CheckStatus.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/enums/ThreadStatus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="7" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+        <state line="4" column="20" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Account.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="663">
+        <state line="12" column="27" selection-start="301" selection-end="301" vertical-scroll-proportion="0.3457627" vertical-offset="0" max-vertical-offset="1615">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Cashier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="10" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+        <state line="38" column="43" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.0" vertical-offset="311" max-vertical-offset="901">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/CashierPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="27" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+        <state line="11" column="38" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="24" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Pocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="30" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="158" column="41" selection-start="7098" selection-end="7098" vertical-scroll-proportion="0.0" vertical-offset="2524" max-vertical-offset="2975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Watcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="51" selection-start="1525" selection-end="1525" vertical-scroll-proportion="0.0" vertical-offset="498" max-vertical-offset="1258">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Bank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="39" selection-start="1972" selection-end="1972" vertical-scroll-proportion="0.0" vertical-offset="1292" max-vertical-offset="1734">
-          <folding>
-            <element signature="method#getCashAmount#0;class#Bank#0" expanded="true" />
-            <element signature="e#2297#2298#0" expanded="true" />
-            <element signature="e#2328#2329#0" expanded="true" />
-            <element signature="e#2376#2377#0" expanded="true" />
-            <element signature="e#2406#2407#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="61" selection-start="1159" selection-end="1159" vertical-scroll-proportion="0.0" vertical-offset="549" max-vertical-offset="2567">
+        <state line="18" column="23" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="1734">
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/threading/core/Watcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="38" selection-start="1798" selection-end="1798" vertical-scroll-proportion="0.0" vertical-offset="460" max-vertical-offset="1139">
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2590#2591#0" expanded="true" />
+            <element signature="e#2619#2620#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/threading/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="21" selection-start="1828" selection-end="1828" vertical-scroll-proportion="1.1237289" vertical-offset="0" max-vertical-offset="816">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="15" column="68" selection-start="429" selection-end="429" vertical-scroll-proportion="0.5137255" vertical-offset="56" max-vertical-offset="1054">
+          <folding />
         </state>
       </provider>
     </entry>

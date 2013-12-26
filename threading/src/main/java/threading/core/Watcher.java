@@ -26,13 +26,21 @@ public class Watcher implements Runnable {
         while (status == ThreadStatus.Running) {
             logger.debug(String.format("Start checking the Bank"));
             totalAmount = 0;
-//            bank.markAccountsAsModified();
-//            bank.markClientsAsModified();
+
             for (Account account : bank.getAccounts()) {
-                totalAmount += account.check();
+                account.watcherStart();
             }
             for (Client client : bank.getClients()) {
+                client.watcherStart();
+            }
+
+            for (Client client : bank.getClients()) {
                 totalAmount += client.checkPocket();
+                client.watcherEnd();
+            }
+            for (Account account : bank.getAccounts()) {
+                totalAmount += account.check();
+                account.watcherEnd();
             }
 
             if (totalAmount == bank.getCashAmount()) {
@@ -49,6 +57,7 @@ public class Watcher implements Runnable {
             }
         }
         status = ThreadStatus.Stopped;
+        logger.debug("Watcher stopped.");
     }
 
     public void interrupt() {

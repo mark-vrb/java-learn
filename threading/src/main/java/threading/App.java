@@ -1,5 +1,7 @@
 package threading;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import threading.core.Bank;
 
 import java.util.Random;
@@ -8,8 +10,10 @@ import java.util.Random;
  * Bank test application. Just keep Bank running for 5 seconds.
  */
 public class App {
+    private static final Logger logger = LogManager.getLogger("App");
+
     public static void main(String[] args) {
-        Bank bank = new Bank();
+        Bank bank = new Bank(2000); // Watcher interval - 2 sec
 
         Random random = new Random();
         for (int i = 0; i < 1000; i++) {
@@ -37,6 +41,20 @@ public class App {
             bank.addCashier(i, cashiersNames[i]);
         }
 
+        logger.debug("Starting the bank.");
+
         bank.start();
+
+        try {
+            Thread.sleep(60000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        logger.debug("Time is up. Carefully stopping the Bank.");
+
+        bank.stop();
+
+        logger.debug("Bank stopped. Program finished.");
     }
 }

@@ -1,5 +1,7 @@
 package threading.core;
 
+import threading.core.enums.ThreadStatus;
+
 import java.util.ArrayList;
 
 /**
@@ -10,18 +12,17 @@ public class Bank {
     private ArrayList<Client> clients;
     private ArrayList<Cashier> cashiers;
     private ArrayList<Account> accounts;
-
+    private ThreadStatus status;
     private int cashAmount;
     private Watcher watcher;
-
     private CashierPool cashierPool;
 
-    public Bank() {
+    public Bank(int watcherInterval) {
         clients = new ArrayList<Client>();
         cashiers = new ArrayList<Cashier>();
         accounts = new ArrayList<Account>();
         cashierPool = new CashierPool(cashiers);
-        watcher = new Watcher(this, 1000);
+        watcher = new Watcher(this, watcherInterval);
     }
 
     public int getCashAmount() {
@@ -61,6 +62,7 @@ public class Bank {
     }
 
     public void start() {
+        status = ThreadStatus.Running;
         Thread thread;
         for (Client client : clients) {
             thread = new Thread(client);
@@ -71,12 +73,7 @@ public class Bank {
     }
 
     public void stop() {
-        watcher.interrupt();
-        while (!watcher.isStopped()) {
-        }
-        for (Client client : clients) {
-            client.interrupt();
-        }
+        status = ThreadStatus.Interrupting;
         boolean allStopped = false;
         while (!allStopped) {
             allStopped = true;
@@ -84,6 +81,11 @@ public class Bank {
                 allStopped = allStopped && client.isStopped();
             }
         }
+
+        watcher.interrupt();
+        while (!watcher.isStopped()) {
+        }
+        status = ThreadStatus.Stopped;
     }
 
     protected ArrayList<Account> getAccounts() {
@@ -92,5 +94,9 @@ public class Bank {
 
     protected ArrayList<Client> getClients() {
         return clients;
+    }
+
+    public ThreadStatus getStatus() {
+        return status;
     }
 }

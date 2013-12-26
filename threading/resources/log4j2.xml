@@ -4,11 +4,15 @@
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
+        <File name="textFile" filename="D:\logs.txt">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
     </appenders>
 
     <loggers>
         <root level="debug">
             <appender-ref ref="Console"/>
+            <appender-ref ref="textFile"/>
         </root>
     </loggers>
 </configuration>

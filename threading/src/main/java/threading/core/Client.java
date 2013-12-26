@@ -12,16 +12,24 @@ import java.util.Random;
  */
 public class Client extends Person implements Runnable {
     private static final Logger logger = LogManager.getLogger("Client");
-    private int pocket = 0;
-    private ThreadStatus status = ThreadStatus.Running;
+    private ThreadStatus status;// = ThreadStatus.Running;
+    private Pocket pocket;
 
     public Client(int id, String name, Bank bank, int amountInPocket) {
         super(id, name, bank);
-        this.pocket = amountInPocket;
+        this.pocket = new Pocket(amountInPocket);
+    }
+
+    public void watcherStart() {
+        pocket.watcherStart();
+    }
+
+    public void watcherEnd() {
+        pocket.watcherEnd();
     }
 
     public int checkPocket() {
-        return pocket;
+        return pocket.check();
     }
 
     private Account getRandomAccount() {
@@ -39,7 +47,7 @@ public class Client extends Person implements Runnable {
 
     private void performRandomOperation(Cashier cashier) {
         Account account = getRandomAccount();
-        int amountAvailable = cashier.checkAmount(account);
+        int amountAvailable = account.check();
         logger.debug(String.format("Client #%d discovered %d dollars available on account #%d",
                 getId(), amountAvailable, account.getId()));
 
@@ -56,20 +64,22 @@ public class Client extends Person implements Runnable {
                 }
                 logger.debug(String.format("Client #%d decided to take %d dollars to pocket from account #%d",
                         getId(), amountToOperate, account.getId()));
-                int takenAmount = cashier.takeAmount(amountToOperate, account);
-                pocket += takenAmount;
-                if (takenAmount == 0)
-                    logger.debug(String.format(
-                            "Client #%d can't take %d dollars, because balance on account #%d was changed",
-                            getId(), amountToOperate, account.getId()));
-                else
+
+                cashier.startWorkWithAccount(account);
+                cashier.takeFromAccount(amountToOperate);
+                if (cashier.commitWorkWithAccount()) {
+                    pocket.put(amountToOperate);
                     logger.debug(String.format(
                             "Client #%d successfully toke %d dollars to pocket from account #%d",
+                            getId(), amountToOperate, account.getId()));
+                } else
+                    logger.debug(String.format(
+                            "Client #%d can't take %d dollars, because balance on account #%d was changed",
                             getId(), amountToOperate, account.getId()));
                 break;
             }
             case 1: { // put from Pocket to Account
-                int amountToOperate = getRandomAmountPart(pocket);
+                int amountToOperate = getRandomAmountPart(pocket.check());
                 if (amountToOperate == 0) {
                     logger.debug(String.format("Client #%d decided to put money from pocket to account #%d, "
                             + "but there are no money in pocket",
@@ -78,10 +88,15 @@ public class Client extends Person implements Runnable {
                 }
                 logger.debug(String.format("Client #%d decided to put %d dollars from pocket to account #%d",
                         getId(), amountToOperate, account.getId()));
-                pocket -= amountToOperate;
-                cashier.putAmount(amountToOperate, account);
-                logger.debug(String.format("Client #%d successfully put %d dollars from pocket to account #%d",
-                        getId(), amountToOperate, account.getId()));
+
+                cashier.startWorkWithAccount(account);
+                cashier.putToAccount(amountToOperate);
+
+                if (cashier.commitWorkWithAccount()) {
+                    pocket.take(amountToOperate);
+                    logger.debug(String.format("Client #%d successfully put %d dollars from pocket to account #%d",
+                            getId(), amountToOperate, account.getId()));
+                }
                 break;
             }
             case 2: { // transfer money to another Account
@@ -95,14 +110,23 @@ public class Client extends Person implements Runnable {
                 Account destination = getRandomAccount();
                 logger.debug(String.format("Client #%d decided to transfer %d dollars from account #%d to account #%d",
                         getId(), amountToOperate, account.getId(), destination.getId()));
-                if (cashier.transferAmount(amountToOperate, account, destination))
+
+                cashier.startWorkWithAccount(account);
+                cashier.takeFromAccount(amountToOperate);
+                if (cashier.commitWorkWithAccount()) {
+                    pocket.put(amountToOperate);
+                    cashier.startWorkWithAccount(destination);
+                    cashier.putToAccount(amountToOperate);
+                    cashier.commitWorkWithAccount();
+                    pocket.take(amountToOperate);
                     logger.debug(String.format(
                             "Client #%d successfully transferred %d dollars from account #%d to account #%d",
                             getId(), amountToOperate, account.getId(), destination.getId()));
-                else
+                } else {
                     logger.debug(String.format(
                             "Client #%d can't transfer %d dollars, because balance on source account #%d was changed",
                             getId(), amountToOperate, account.getId()));
+                }
                 break;
             }
         }
@@ -115,8 +139,9 @@ public class Client extends Person implements Runnable {
 
     @Override
     public void run() {
+        status = ThreadStatus.Running;
         logger.debug(String.format("Client #%d with name = %s is running", getId(), getName()));
-        while (status == ThreadStatus.Running) {
+        while (bank.getStatus() == ThreadStatus.Running) {
             try {
                 logger.debug(String.format("Client #%d is waiting for Cashier", getId()));
                 Cashier cashier = bank.getCashier();
@@ -132,11 +157,14 @@ public class Client extends Person implements Runnable {
                 e.printStackTrace();
             }
         }
+        interrupt();
         status = ThreadStatus.Stopped;
+        logger.debug(String.format("Client #%d stopped.", getId()));
     }
 
     public void interrupt() {
         status = ThreadStatus.Interrupting;
+        logger.debug(String.format("Client #%d is interrupting.", getId()));
     }
 
     public boolean isStopped() {

@@ -5,29 +5,43 @@ package threading.core;
  * Created by Mark Varabyou on 12/16/13.
  */
 public class Cashier extends Person {
+    private Account lockedAccount;
+    private Account workingCopy;
+
     public Cashier(int id, String name, Bank bank) {
         super(id, name, bank);
     }
 
-    public int checkAmount(Account account) {
-        return account.check();
+    public boolean startWorkWithAccount(Account account) {
+        if (this.lockedAccount != null)
+            return false;
+        account.acquireAccount();
+        this.lockedAccount = account;
+        this.workingCopy = lockedAccount.getCopy();
+        return true;
     }
 
-    public int takeAmount(int amount, Account account) {
-        if (account.tryWithdraw(amount))
-            return amount;
-        return 0;
+    public void putToAccount(int amount) {
+        this.workingCopy.deposit(amount);
     }
 
-    public void putAmount(int amount, Account account) {
-        account.deposit(amount);
+    public void takeFromAccount(int amount) {
+        this.workingCopy.tryWithdraw(amount);
     }
 
-    public boolean transferAmount(int amount, Account source, Account destination) {
-        if (source.tryWithdraw(amount)) {
-            destination.deposit(amount);
-            return true;
+    public int checkAmountOnAccount() {
+        return this.workingCopy.check();
+    }
+
+    public boolean commitWorkWithAccount() {
+        boolean output = false;
+        if (this.workingCopy.check() >= 0) {
+            this.lockedAccount.deposit(this.workingCopy.check() - this.lockedAccount.check());
+            output = true;
         }
-        return false;
+        this.workingCopy = null;
+        this.lockedAccount.releaseAccount();
+        this.lockedAccount = null;
+        return output;
     }
 }
